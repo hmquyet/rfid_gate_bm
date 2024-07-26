@@ -1,0 +1,30 @@
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.csproj.AssemblyReference.cache
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.ConfigForm.resources
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.Form1.resources
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.LoginForm.resources
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.ChangeIPdlg.resources
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.fNhSetDlg.resources
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.fPhSetDlg.resources
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.fSetdlg.resources
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.locateForm.resources
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.ParamSetting.resources
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.Properties.Resources.resources
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.csproj.GenerateResource.cache
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.csproj.CoreCompileInputs.cache
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\Interop.MSXML2.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.csproj.ResolveComReference.cache
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.csproj.AssemblyReference.cache
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\Interop.MSXML2.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.csproj.ResolveComReference.cache
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.ConfigForm.resources
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.Form1.resources
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.LoginForm.resources
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.ChangeIPdlg.resources
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.fNhSetDlg.resources
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.fPhSetDlg.resources
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.fSetdlg.resources
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.locateForm.resources
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.ParamSetting.resources
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.Properties.Resources.resources
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.csproj.GenerateResource.cache
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Debug\UHFReader288Demo.csproj.CoreCompileInputs.cache

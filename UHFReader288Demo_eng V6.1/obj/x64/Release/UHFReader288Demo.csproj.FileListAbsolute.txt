@@ -1,0 +1,640 @@
+C:\Users\GIANG\Downloads\nextwaves\phan mem\english\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\UHFReader288Demo.exe
+C:\Users\GIANG\Downloads\nextwaves\phan mem\english\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\UHFReader288Demo.pdb
+C:\Users\GIANG\Downloads\nextwaves\phan mem\english\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.AssemblyReference.cache
+C:\Users\GIANG\Downloads\nextwaves\phan mem\english\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.ConfigForm.resources
+C:\Users\GIANG\Downloads\nextwaves\phan mem\english\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.Form1.resources
+C:\Users\GIANG\Downloads\nextwaves\phan mem\english\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.LoginForm.resources
+C:\Users\GIANG\Downloads\nextwaves\phan mem\english\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.ChangeIPdlg.resources
+C:\Users\GIANG\Downloads\nextwaves\phan mem\english\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.fNhSetDlg.resources
+C:\Users\GIANG\Downloads\nextwaves\phan mem\english\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.fPhSetDlg.resources
+C:\Users\GIANG\Downloads\nextwaves\phan mem\english\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.fSetdlg.resources
+C:\Users\GIANG\Downloads\nextwaves\phan mem\english\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.locateForm.resources
+C:\Users\GIANG\Downloads\nextwaves\phan mem\english\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.ParamSetting.resources
+C:\Users\GIANG\Downloads\nextwaves\phan mem\english\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.Properties.Resources.resources
+C:\Users\GIANG\Downloads\nextwaves\phan mem\english\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.GenerateResource.cache
+C:\Users\GIANG\Downloads\nextwaves\phan mem\english\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.CoreCompileInputs.cache
+C:\Users\GIANG\Downloads\nextwaves\phan mem\english\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReade.514D03AD.Up2Date
+C:\Users\GIANG\Downloads\nextwaves\phan mem\english\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.exe
+C:\Users\GIANG\Downloads\nextwaves\phan mem\english\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.pdb
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\UHFReader288Demo.exe
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\UHFReader288Demo.pdb
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.AssemblyReference.cache
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.ConfigForm.resources
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.Form1.resources
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.LoginForm.resources
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.ChangeIPdlg.resources
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.fNhSetDlg.resources
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.fPhSetDlg.resources
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.fSetdlg.resources
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.locateForm.resources
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.ParamSetting.resources
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.Properties.Resources.resources
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.GenerateResource.cache
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.CoreCompileInputs.cache
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReade.514D03AD.Up2Date
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.exe
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.pdb
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.ResolveComReference.cache
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\UHFReader288Demo.exe.config
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\ClosedXML.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\DocumentFormat.OpenXml.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\ExcelNumberFormat.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Irony.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\SixLabors.Fonts.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Buffers.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.IO.Packaging.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Memory.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Numerics.Vectors.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Runtime.CompilerServices.Unsafe.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\XLParser.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\ClosedXML.xml
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\DocumentFormat.OpenXml.xml
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\ExcelNumberFormat.xml
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\SixLabors.Fonts.xml
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Buffers.xml
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.IO.Packaging.xml
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Memory.xml
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Numerics.Vectors.xml
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Runtime.CompilerServices.Unsafe.xml
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\Interop.MSXML2.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\EPPlus.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\EPPlus.Interfaces.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\EPPlus.System.Drawing.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Bcl.AsyncInterfaces.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.Json.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileProviders.Physical.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Primitives.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IO.RecyclableMemoryStream.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.ComponentModel.Annotations.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Cryptography.Pkcs.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Encoding.CodePages.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Encodings.Web.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Json.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Threading.Tasks.Extensions.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.ValueTuple.dll
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\EPPlus.xml
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Bcl.AsyncInterfaces.xml
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.xml
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.FileExtensions.xml
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.Json.xml
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileProviders.Physical.xml
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileSystemGlobbing.xml
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Primitives.xml
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IO.RecyclableMemoryStream.xml
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Cryptography.Pkcs.xml
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Encoding.CodePages.xml
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Encodings.Web.xml
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Json.xml
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Threading.Tasks.Extensions.xml
+D:\NextwaveIndustries\RFID\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.ValueTuple.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.AssemblyReference.cache
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\Interop.MSXML2.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.ResolveComReference.cache
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.ConfigForm.resources
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.Form1.resources
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.LoginForm.resources
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.ChangeIPdlg.resources
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.fNhSetDlg.resources
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.fPhSetDlg.resources
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.fSetdlg.resources
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.locateForm.resources
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.ParamSetting.resources
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.Properties.Resources.resources
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.GenerateResource.cache
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.CoreCompileInputs.cache
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.exe
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.pdb
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\UHFReader288Demo.exe.config
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\UHFReader288Demo.exe
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\UHFReader288Demo.pdb
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\ClosedXML.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\DocumentFormat.OpenXml.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\EPPlus.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\EPPlus.Interfaces.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\EPPlus.System.Drawing.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\ExcelNumberFormat.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Irony.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Bcl.AsyncInterfaces.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.Json.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileProviders.Physical.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Primitives.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IO.RecyclableMemoryStream.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\SixLabors.Fonts.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Buffers.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.ComponentModel.Annotations.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.IO.Packaging.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Memory.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Numerics.Vectors.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Runtime.CompilerServices.Unsafe.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Cryptography.Pkcs.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Encoding.CodePages.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Encodings.Web.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Json.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Threading.Tasks.Extensions.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.ValueTuple.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\XLParser.dll
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\ClosedXML.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\DocumentFormat.OpenXml.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\EPPlus.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\ExcelNumberFormat.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Bcl.AsyncInterfaces.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.FileExtensions.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.Json.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileProviders.Physical.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileSystemGlobbing.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Primitives.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IO.RecyclableMemoryStream.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\SixLabors.Fonts.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Buffers.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.IO.Packaging.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Memory.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Numerics.Vectors.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Runtime.CompilerServices.Unsafe.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Cryptography.Pkcs.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Encoding.CodePages.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Encodings.Web.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Json.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Threading.Tasks.Extensions.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.ValueTuple.xml
+D:\NextwaveIndustries\RFID_Doan\english old version\Demo\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReade.514D03AD.Up2Date
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\UHFReader288Demo.exe.config
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\UHFReader288Demo.exe
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\UHFReader288Demo.pdb
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\ClosedXML.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\DocumentFormat.OpenXml.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\EPPlus.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\EPPlus.Interfaces.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\EPPlus.System.Drawing.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\ExcelNumberFormat.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Irony.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Bcl.AsyncInterfaces.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.Json.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileProviders.Physical.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Primitives.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IO.RecyclableMemoryStream.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\SixLabors.Fonts.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Buffers.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.ComponentModel.Annotations.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.IO.Packaging.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Memory.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Numerics.Vectors.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Runtime.CompilerServices.Unsafe.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Cryptography.Pkcs.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Encoding.CodePages.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Encodings.Web.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Json.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Threading.Tasks.Extensions.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.ValueTuple.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\XLParser.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\ClosedXML.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\DocumentFormat.OpenXml.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\EPPlus.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\ExcelNumberFormat.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Bcl.AsyncInterfaces.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.FileExtensions.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.Json.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileProviders.Physical.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileSystemGlobbing.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Primitives.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IO.RecyclableMemoryStream.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\SixLabors.Fonts.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Buffers.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.IO.Packaging.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Memory.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Numerics.Vectors.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Runtime.CompilerServices.Unsafe.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Cryptography.Pkcs.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Encoding.CodePages.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Encodings.Web.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Json.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Threading.Tasks.Extensions.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.ValueTuple.xml
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.AssemblyReference.cache
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\Interop.MSXML2.dll
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.ResolveComReference.cache
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.ConfigForm.resources
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.Form1.resources
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.LoginForm.resources
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.ChangeIPdlg.resources
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.fNhSetDlg.resources
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.fPhSetDlg.resources
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.fSetdlg.resources
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.locateForm.resources
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.ParamSetting.resources
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.Properties.Resources.resources
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.GenerateResource.cache
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.CoreCompileInputs.cache
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReade.514D03AD.Up2Date
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.exe
+D:\NextwaveIndustries\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.pdb
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\UHFReader288Demo.exe.config
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\UHFReader288Demo.exe
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\UHFReader288Demo.pdb
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\ClosedXML.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\DocumentFormat.OpenXml.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\EPPlus.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\EPPlus.Interfaces.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\EPPlus.System.Drawing.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\ExcelNumberFormat.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Irony.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Bcl.AsyncInterfaces.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.Json.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileProviders.Physical.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Primitives.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IO.RecyclableMemoryStream.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\SixLabors.Fonts.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Buffers.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.ComponentModel.Annotations.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.IO.Packaging.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Memory.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Numerics.Vectors.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Runtime.CompilerServices.Unsafe.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Cryptography.Pkcs.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Encoding.CodePages.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Encodings.Web.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Json.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Threading.Tasks.Extensions.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.ValueTuple.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\XLParser.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\ClosedXML.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\DocumentFormat.OpenXml.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\EPPlus.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\ExcelNumberFormat.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Bcl.AsyncInterfaces.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.FileExtensions.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.Json.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileProviders.Physical.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileSystemGlobbing.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Primitives.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IO.RecyclableMemoryStream.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\SixLabors.Fonts.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Buffers.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.IO.Packaging.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Memory.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Numerics.Vectors.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Runtime.CompilerServices.Unsafe.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Cryptography.Pkcs.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Encoding.CodePages.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Encodings.Web.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Json.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Threading.Tasks.Extensions.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.ValueTuple.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.AssemblyReference.cache
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\Interop.MSXML2.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.ResolveComReference.cache
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.ConfigForm.resources
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.Form1.resources
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.LoginForm.resources
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.ChangeIPdlg.resources
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.fNhSetDlg.resources
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.fPhSetDlg.resources
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.fSetdlg.resources
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.locateForm.resources
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.ParamSetting.resources
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.Properties.Resources.resources
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.GenerateResource.cache
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.CoreCompileInputs.cache
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReade.514D03AD.Up2Date
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.exe
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.pdb
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Azure.Core.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Azure.Identity.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Data.SqlClient.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Identity.Client.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IdentityModel.Abstractions.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IdentityModel.Logging.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IdentityModel.Protocols.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IdentityModel.Tokens.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.ClientModel.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Configuration.ConfigurationManager.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Diagnostics.DiagnosticSource.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.IdentityModel.Tokens.Jwt.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.IO.FileSystem.AccessControl.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Memory.Data.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.AccessControl.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Cryptography.ProtectedData.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Permissions.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Principal.Windows.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Azure.Core.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Azure.Identity.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Data.SqlClient.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Identity.Client.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Identity.Client.Extensions.Msal.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IdentityModel.Abstractions.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IdentityModel.Logging.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IdentityModel.Protocols.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IdentityModel.Tokens.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.ClientModel.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Configuration.ConfigurationManager.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Diagnostics.DiagnosticSource.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.IdentityModel.Tokens.Jwt.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.IO.FileSystem.AccessControl.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Memory.Data.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.AccessControl.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Cryptography.ProtectedData.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Permissions.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Principal.Windows.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\de\Microsoft.Data.SqlClient.resources.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\es\Microsoft.Data.SqlClient.resources.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\fr\Microsoft.Data.SqlClient.resources.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\it\Microsoft.Data.SqlClient.resources.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\ja\Microsoft.Data.SqlClient.resources.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\ko\Microsoft.Data.SqlClient.resources.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\ru\Microsoft.Data.SqlClient.resources.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\M2Mqtt.Net.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\MQTTnet.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\M2Mqtt.Net.pdb
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\MQTTnet.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Net.Http.Json.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\c#\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Net.Http.Json.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\UHFReader288Demo.exe.config
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\UHFReader288Demo.exe
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\UHFReader288Demo.pdb
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Azure.Core.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Azure.Identity.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\ClosedXML.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\DocumentFormat.OpenXml.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\EPPlus.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\EPPlus.Interfaces.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\EPPlus.System.Drawing.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\ExcelNumberFormat.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Irony.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\M2Mqtt.Net.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Bcl.AsyncInterfaces.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Data.SqlClient.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.Json.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileProviders.Physical.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Primitives.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Identity.Client.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IdentityModel.Abstractions.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IdentityModel.Logging.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IdentityModel.Protocols.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IdentityModel.Tokens.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IO.RecyclableMemoryStream.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\MQTTnet.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\SixLabors.Fonts.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Buffers.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.ClientModel.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.ComponentModel.Annotations.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Configuration.ConfigurationManager.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Diagnostics.DiagnosticSource.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.IdentityModel.Tokens.Jwt.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.IO.FileSystem.AccessControl.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.IO.Packaging.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Memory.Data.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Memory.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Net.Http.Json.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Numerics.Vectors.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Runtime.CompilerServices.Unsafe.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.AccessControl.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Cryptography.Pkcs.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Cryptography.ProtectedData.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Permissions.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Principal.Windows.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Encoding.CodePages.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Encodings.Web.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Json.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Threading.Tasks.Extensions.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.ValueTuple.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\XLParser.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Azure.Core.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Azure.Identity.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\ClosedXML.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\DocumentFormat.OpenXml.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\EPPlus.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\ExcelNumberFormat.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\M2Mqtt.Net.pdb
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Bcl.AsyncInterfaces.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Data.SqlClient.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.FileExtensions.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.Json.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileProviders.Physical.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileSystemGlobbing.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Primitives.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Identity.Client.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Identity.Client.Extensions.Msal.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IdentityModel.Abstractions.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IdentityModel.Logging.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IdentityModel.Protocols.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IdentityModel.Tokens.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.IO.RecyclableMemoryStream.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\MQTTnet.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\SixLabors.Fonts.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Buffers.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.ClientModel.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Configuration.ConfigurationManager.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Diagnostics.DiagnosticSource.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.IdentityModel.Tokens.Jwt.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.IO.FileSystem.AccessControl.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.IO.Packaging.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Memory.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Memory.Data.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Net.Http.Json.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Numerics.Vectors.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Runtime.CompilerServices.Unsafe.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.AccessControl.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Cryptography.Pkcs.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Cryptography.ProtectedData.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Permissions.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Principal.Windows.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Encoding.CodePages.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Encodings.Web.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Json.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Threading.Tasks.Extensions.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\System.ValueTuple.xml
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\de\Microsoft.Data.SqlClient.resources.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\es\Microsoft.Data.SqlClient.resources.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\fr\Microsoft.Data.SqlClient.resources.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\it\Microsoft.Data.SqlClient.resources.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\ja\Microsoft.Data.SqlClient.resources.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\ko\Microsoft.Data.SqlClient.resources.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\ru\Microsoft.Data.SqlClient.resources.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\bin\x64\Release\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.AssemblyReference.cache
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\obj\x64\Release\Interop.MSXML2.dll
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.ResolveComReference.cache
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.ConfigForm.resources
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.Form1.resources
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.LoginForm.resources
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.ChangeIPdlg.resources
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.fNhSetDlg.resources
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.fPhSetDlg.resources
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.fSetdlg.resources
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.locateForm.resources
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.ParamSetting.resources
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.Properties.Resources.resources
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.GenerateResource.cache
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.CoreCompileInputs.cache
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReade.514D03AD.Up2Date
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.exe
+D:\DOCUMENTS\DoAn\RFID_Doan\cs\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.pdb
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\UHFReader288Demo.exe.config
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\UHFReader288Demo.exe
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\UHFReader288Demo.pdb
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.AspNetCore.Connections.Abstractions.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.AspNetCore.Http.Connections.Client.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.AspNetCore.Http.Connections.Common.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.AspNetCore.SignalR.Client.Core.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.AspNetCore.SignalR.Client.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.AspNetCore.SignalR.Common.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Bcl.AsyncInterfaces.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Bcl.TimeProvider.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Caching.Abstractions.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Caching.Memory.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.Json.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.DependencyInjection.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Features.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileProviders.Physical.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Logging.Abstractions.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Logging.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Options.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Primitives.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Newtonsoft.Json.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Pipelines.Sockets.Unofficial.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Buffers.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.ClientModel.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.ComponentModel.Annotations.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Configuration.ConfigurationManager.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Diagnostics.DiagnosticSource.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.IO.Packaging.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.IO.Pipelines.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Memory.Data.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Memory.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Numerics.Vectors.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Runtime.CompilerServices.Unsafe.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.AccessControl.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Cryptography.Pkcs.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Cryptography.ProtectedData.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Permissions.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Principal.Windows.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Encodings.Web.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Json.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Threading.Channels.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Threading.Tasks.Extensions.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.ValueTuple.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.AspNetCore.Connections.Abstractions.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.AspNetCore.Http.Connections.Client.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.AspNetCore.Http.Connections.Common.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.AspNetCore.SignalR.Client.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.AspNetCore.SignalR.Client.Core.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.AspNetCore.SignalR.Common.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.AspNetCore.SignalR.Protocols.Json.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Bcl.AsyncInterfaces.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Bcl.TimeProvider.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Caching.Abstractions.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Caching.Memory.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.FileExtensions.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Configuration.Json.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.DependencyInjection.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Features.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileProviders.Physical.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.FileSystemGlobbing.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Logging.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Logging.Abstractions.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Options.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Microsoft.Extensions.Primitives.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Newtonsoft.Json.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\Pipelines.Sockets.Unofficial.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Buffers.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.ClientModel.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Configuration.ConfigurationManager.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Diagnostics.DiagnosticSource.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.IO.Packaging.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.IO.Pipelines.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Memory.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Memory.Data.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Numerics.Vectors.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Runtime.CompilerServices.Unsafe.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.AccessControl.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Cryptography.Pkcs.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Cryptography.ProtectedData.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Permissions.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Security.Principal.Windows.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Encodings.Web.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Text.Json.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Threading.Channels.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.Threading.Tasks.Extensions.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\bin\x64\Release\System.ValueTuple.xml
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.AssemblyReference.cache
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\obj\x64\Release\Interop.MSXML2.dll
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.ResolveComReference.cache
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.ConfigForm.resources
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.Form1.resources
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.LoginForm.resources
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.ChangeIPdlg.resources
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.fNhSetDlg.resources
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.fPhSetDlg.resources
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.fSetdlg.resources
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.locateForm.resources
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.ParamSetting.resources
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.Properties.Resources.resources
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.GenerateResource.cache
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.csproj.CoreCompileInputs.cache
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReade.514D03AD.Up2Date
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.exe
+D:\NextwaveIndustries\RFID\RFID_gate_BM\Rfid_gate\UHFReader288Demo_eng V6.1\obj\x64\Release\UHFReader288Demo.pdb
