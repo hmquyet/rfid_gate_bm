@@ -4,4 +4,4 @@
 + 2 app kết nối với nhau thông qua giao thức SignalR để truyền dữ liệu giữa 2 app.
 - Vấn đề hiện tại:
 + Bị lỗi chỉ đọc được 1 antenna.
-+ Anh Trí yêu cầu gộp 2 app lại, chỉ cần chạy 1 app service vừa đọc được dữ liệu từ reader vừa đồng thời tích hợp được cả các api mà đã yêu cầu trước đó.Anh trí chỉ call qua api service để điều khiển reader và các thiết bị ở cổng.
++ Anh Trí yêu cầu gộp 2 app lại, chỉ cần chạy 1 app service vừa đọc được dữ liệu từ reader vừa đồng thời tích hợp được cả các api mà đã yêu cầu trước đó. Anh trí chỉ call qua api service để điều khiển reader và các thiết bị ở cổng.
