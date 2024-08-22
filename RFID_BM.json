@@ -1,0 +1,215 @@
+{
+	"info": {
+		"_postman_id": "2ee89487-1259-48a8-8a2e-8fbc6f913be6",
+		"name": "RFID",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36676424"
+	},
+	"item": [
+		{
+			"name": "API_BM",
+			"item": [
+				{
+					"name": "selectMode",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7024/Rfid/selectMode?selectMode=auto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7024",
+							"path": [
+								"Rfid",
+								"selectMode"
+							],
+							"query": [
+								{
+									"key": "selectMode",
+									"value": "auto"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buzzer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7024/Rfid/buzzer?time=100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7024",
+							"path": [
+								"Rfid",
+								"buzzer"
+							],
+							"query": [
+								{
+									"key": "time",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lamp",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"message\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7024/Rfid/lamp?lampId=red&time=100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7024",
+							"path": [
+								"Rfid",
+								"lamp"
+							],
+							"query": [
+								{
+									"key": "lampId",
+									"value": "red"
+								},
+								{
+									"key": "time",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7024/Rfid/request",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7024",
+							"path": [
+								"Rfid",
+								"request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "removeAllData",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7024/Rfid/removeAllData",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7024",
+							"path": [
+								"Rfid",
+								"removeAllData"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "removeData",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7024/Rfid/removeData?epc=E2801191A504006548AD6DF7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7024",
+							"path": [
+								"Rfid",
+								"removeData"
+							],
+							"query": [
+								{
+									"key": "epc",
+									"value": "E2801191A504006548AD6DF7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "stop",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7024/Rfid/stop",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7024",
+							"path": [
+								"Rfid",
+								"stop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "start",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7024/Rfid/start",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7024",
+							"path": [
+								"Rfid",
+								"start"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

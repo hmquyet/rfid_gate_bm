@@ -27,12 +27,20 @@ using System.IO.Ports;
 using Microsoft.AspNetCore.SignalR.Client;
 using System.Xml.Linq;
 using Newtonsoft.Json;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
+using System.Management;
+using System.Security.Cryptography;
+using System.Windows.Forms.DataVisualization.Charting;
+using System.Configuration;
 
 
 namespace UHFReader288Demo
 {
     public partial class Form1 : Form
     {
+        private ManagementEventWatcher arrival;
+        private ManagementEventWatcher removal;
+
         [DllImport("User32.dll", EntryPoint = "PostMessage")]
         private static extern int PostMessage(
         IntPtr hWnd, // handle to destination window 
@@ -104,6 +112,7 @@ namespace UHFReader288Demo
 
         private static object LockFlag = new object();
 
+      
         private static void searchCB(IntPtr dev, IntPtr data)
         {
             uint ipAddr = 0;
@@ -122,10 +131,7 @@ namespace UHFReader288Demo
             }
 
         }
-        private static IPAddress getIPAddress(uint interIP)
-        {
-            return new IPAddress((uint)IPAddress.HostToNetworkOrder((int)interIP));
-        }
+       
         RFIDCallBack elegateRFIDCallBack;
 
         RfidTagCallBack myCallBack;
@@ -134,7 +140,16 @@ namespace UHFReader288Demo
         public Form1()
         {
             InitializeComponent();
-       
+            //UpdateSerialPortList();
+            //StartListeningForSerialPortChanges();
+            ComboBox_COM.SelectedIndex = 10;
+            ComboBox_baud2.SelectedIndex = 4;
+
+            comboBoxPort.SelectedIndex = 9;
+            comboBoxBaud.SelectedIndex = 4;
+            ComboBox_PowerDbm.SelectedIndex = 26;
+            //timer1.Interval = 300;
+            timer2.Interval = 5000;
 
 
             DevControl.tagErrorCode eCode = DevControl.DM_Init(searchCallBack, IntPtr.Zero);
@@ -147,11 +162,208 @@ namespace UHFReader288Demo
             myCallBack = new RfidTagCallBack(GetEPC);
             InitializeDataTable();
 
-                
-            
-        
+            //LoadBaudRates();
+            LoadSavedSettings();
+            ConnectToPortsMCU();
+            ConnectToPortsReader();
+
+            serialPort2.DataReceived += new SerialDataReceivedEventHandler(serialPort2_DataReceived);
+
+        }
+        private async void ConnectToPortsReader()
+        {
+           
+                int portNum = ComboBox_COM.SelectedIndex + 1;
+                int FrmPortIndex = 0;
+                string strException = string.Empty;
+                fBaud = Convert.ToByte(ComboBox_baud2.SelectedIndex);
+                if (fBaud > 2)
+                    fBaud = Convert.ToByte(fBaud + 2);
+                fComAdr = 255;
+                fCmdRet = RWDev.OpenComPort(portNum, ref fComAdr, fBaud, ref FrmPortIndex);
+                if (fCmdRet != 0)
+                {
+                    string strLog = "Connect reader failed: " + GetReturnCodeDesc(fCmdRet);
+                    WriteLog(lrtxtLog, strLog, 1);
+                    return;
+                }
+                else
+                {
+                    frmcomportindex = FrmPortIndex;
+                    string strLog = "Connected: " + ComboBox_COM.Text + "@" + ComboBox_baud2.Text;
+                    WriteLog(lrtxtLog, strLog, 0);
+                    
+                    btConnect232.Enabled = false;
+                    btDisConnect232.Enabled = true;
+
+                    btConnect232.ForeColor = Color.Black;
+                    btDisConnect232.ForeColor = Color.Indigo;
+                    SetButtonBold(btConnect232);
+                    SetButtonBold(btDisConnect232);
+                    if (FrmPortIndex > 0)
+                        RWDev.InitRFIDCallBack(elegateRFIDCallBack, true, FrmPortIndex);
+                await Task.Delay(1000);
+                EnabledForm();
+                }
+ 
+        }
+        private void ConnectToPortsMCU()
+        {
+            try
+            {
+                serialPort2 = new SerialPort(comboBoxPort.SelectedItem?.ToString(),
+                                             int.Parse(comboBoxBaud.SelectedItem?.ToString()));
+                serialPort2.Open();
+                if (serialPort2.IsOpen)
+                {
+                    try
+                    {
+                        Control.CheckForIllegalCrossThreadCalls = false;
+                   
+                        btConnectMCU.Enabled = false;
+                        btDisConnectMCU.Enabled = true;
+                        comboBoxPort.Enabled = false;
+                        comboBoxBaud.Enabled = false;
+                        btConnectMCU.ForeColor = Color.Black;
+                        btDisConnectMCU.ForeColor = Color.Indigo;
+                    }
+                    catch (UnauthorizedAccessException)
+                    {
+                        MessageBox.Show("Access to the port is denied. Please check if the port is already in use or you do not have the necessary permissions.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                WriteLog(lrtxtLog, "Successfully connected to " + comboBoxPort.SelectedItem?.ToString(), 1);
+            }
+            catch (Exception ex)
+            {
+                WriteLog(lrtxtLog, "Failed to connect to Box: " + ex.Message,1);
+            }
         }
 
+
+        static string ExtractPortName(string fullName)
+        {
+            int startIndex = fullName.IndexOf('(');
+
+            if (startIndex >= 0)
+            {
+                return fullName.Substring(startIndex + 1, fullName.Length - startIndex - 2);
+            }
+            return string.Empty;
+        }
+
+
+        private void LoadBaudRates()
+        {
+          
+            string[] baudRates = { "9600", "19200", "38400", "57600", "115200" };
+            ComboBox_baud2.Items.AddRange(baudRates);
+            comboBoxBaud.Items.AddRange(baudRates);
+        }
+
+        private void LoadSavedSettings()
+        {
+         
+            ComboBox_COM.SelectedItem = ConfigurationManager.AppSettings["SelectedCOMPort"];
+            ComboBox_baud2.SelectedItem = ConfigurationManager.AppSettings["SelectedBaudRate1"];
+            comboBoxPort.SelectedItem = ConfigurationManager.AppSettings["SelectedPort"];
+            comboBoxBaud.SelectedItem = ConfigurationManager.AppSettings["SelectedBaudRate2"];
+            ComboBox_PowerDbm.SelectedItem = ConfigurationManager.AppSettings["SelectedPower"];
+        }
+
+        private void SaveSettings()
+        {
+            var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+
+        
+            config.AppSettings.Settings.Remove("SelectedCOMPort");
+            config.AppSettings.Settings.Add("SelectedCOMPort", ComboBox_COM.SelectedItem?.ToString());
+
+            config.AppSettings.Settings.Remove("SelectedBaudRate1");
+            config.AppSettings.Settings.Add("SelectedBaudRate1", ComboBox_baud2.SelectedItem?.ToString());
+
+            config.AppSettings.Settings.Remove("SelectedPort");
+            config.AppSettings.Settings.Add("SelectedPort", comboBoxPort.SelectedItem?.ToString());
+
+            config.AppSettings.Settings.Remove("SelectedBaudRate2");
+            config.AppSettings.Settings.Add("SelectedBaudRate2", comboBoxBaud.SelectedItem?.ToString());
+
+            config.AppSettings.Settings.Remove("SelectedPower");
+            config.AppSettings.Settings.Add("SelectedPower", ComboBox_PowerDbm.SelectedItem?.ToString());
+
+            config.Save(ConfigurationSaveMode.Modified);
+            ConfigurationManager.RefreshSection("appSettings");
+        }
+        static string ExtractDeviceDescription(string fullName)
+        {
+            int startIndex = fullName.IndexOf('(');
+
+            if (startIndex >= 0)
+            {
+                return fullName.Substring(0, startIndex - 1).Trim();
+            }
+            return fullName;
+        }
+        private void StartListeningForSerialPortChanges()
+        {
+            try
+            {
+
+                using (var searcher = new ManagementObjectSearcher("SELECT * FROM Win32_PnPEntity WHERE Caption LIKE '%(COM%'"))
+                {
+                    foreach (var device in searcher.Get())
+                    {
+
+                        string deviceName = device["Caption"].ToString();
+
+                        string portName = ExtractPortName(deviceName);
+                        string deviceDescription = ExtractDeviceDescription(deviceName);
+                        if(deviceDescription == "USB-SERIAL CH340")
+                        {
+                            comboBoxPort.Items.Add(portName);
+                        }
+                        else if (deviceDescription == "USB Serial Port")
+                        {
+                            ComboBox_COM.Items.Add(portName);
+                        }
+
+                    }
+                }
+
+                    comboBoxPort.SelectedIndex = 0;
+                    ComboBox_COM.SelectedIndex = 0;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error getting COM port information: " + ex.Message);
+            }
+        }
+        private void StopListeningForSerialPortChanges()
+        {
+            if (arrival != null)
+            {
+                arrival.Stop();
+                removal.Stop();
+            }
+        }
+        private void UpdateSerialPortList()
+        {
+            //if (comboBoxPort.InvokeRequired || ComboBox_COM.InvokeRequired)
+            //{
+            //    comboBoxPort.Invoke(new MethodInvoker(UpdateSerialPortList));
+            //    return;
+            //}
+
+            //string[] ports = SerialPort.GetPortNames();
+            //comboBoxPort.Items.Clear();
+            //comboBoxPort.Items.AddRange(ports);
+
+        }
         private void InitializeDataTable()
         {
 
@@ -191,15 +403,46 @@ namespace UHFReader288Demo
 
         private void SendTagMessage(IntPtr ptrWnd, RFIDTag ce)
         {
+            //if (mythread != null)
+            //{
+
+            //    int Antnum = ce.ANT;
+            //    string str_ant = GetAntennaNumber(Antnum).ToString();// Convert.ToString(Antnum, 2).PadLeft(4, '0');
+            //    string epclen = ce.LEN.ToString();// Convert.ToString(ce.LEN, 16);
+            //    string para = str_ant + "," + epclen + "," + ce.UID + "," + ce.RSSI.ToString() + "," + ce.phase_begin + "," + ce.phase_end + "," + ce.Freqkhz;
+            //    SendMessage(ptrWnd, WM_SENDTAG, IntPtr.Zero, para);
+
+            //}
+
             if (mythread != null)
             {
-
-                int Antnum = ce.ANT;
-                string str_ant = GetAntennaNumber(Antnum).ToString();// Convert.ToString(Antnum, 2).PadLeft(4, '0');
-                string epclen = ce.LEN.ToString();// Convert.ToString(ce.LEN, 16);
-                string para = str_ant + "," + epclen + "," + ce.UID + "," + ce.RSSI.ToString() + "," + ce.phase_begin + "," + ce.phase_end + "," + ce.Freqkhz;
-                SendMessage(ptrWnd, WM_SENDTAG, IntPtr.Zero, para);
-
+                
+                    int Antnum = ce.ANT;
+                    string str_ant = GetAntennaNumber(Antnum).ToString();// Convert.ToString(Antnum, 2).PadLeft(4, '0');
+                    string epclen = ce.LEN.ToString();// Convert.ToString(ce.LEN, 16);
+                    string para = str_ant + "," + epclen + "," + ce.UID + "," + ce.RSSI.ToString() + "," + ce.phase_begin + "," + ce.phase_end + "," + ce.Freqkhz;
+                    SendMessage(ptrWnd, WM_SENDTAG, IntPtr.Zero, para);
+                
+            }
+            else if (jbthread != null)
+            {
+               
+                    int Antnum = ce.ANT;
+                    string str_ant = GetAntennaNumber(Antnum).ToString();
+                    string epclen = ce.LEN.ToString();
+                    string para = str_ant + "," + epclen + "," + ce.UID + "," + ce.RSSI.ToString();
+                    SendMessage(ptrWnd, WM_JB_TAG, IntPtr.Zero, para);
+                
+            }
+            else if (gbthread != null)
+            {
+               
+                    int Antnum = ce.ANT;
+                    string str_ant = GetAntennaNumber(Antnum).ToString();
+                    string epclen = ce.LEN.ToString();
+                    string para = str_ant + "," + epclen + "," + ce.UID + "," + ce.RSSI.ToString() + " ";
+                    SendMessage(ptrWnd, WM_GB_TAG, IntPtr.Zero, para);
+                
             }
 
         }
@@ -261,7 +504,10 @@ namespace UHFReader288Demo
                 int phase_end = Convert.ToInt32(btArr[5], 10);
                 int freqkhz = Convert.ToInt32(btArr[6], 10);
                 if (scanType == 0)
-                    updateEPC(sEPC, RSSI, str_ant, phase_begin, phase_end, freqkhz);
+                {
+                   updateEPC(sEPC, RSSI, str_ant, phase_begin, phase_end, freqkhz); 
+                }
+                   
 
                 bool flagset = false;
                 flagset = (dataGridView1.DataSource == null) ? true : false;
@@ -308,7 +554,6 @@ namespace UHFReader288Demo
                 string Info = Marshal.PtrToStringAnsi(m.LParam);
                 fCmdRet = Convert.ToInt32(Info);
                 string strLog = "Inventory: " + GetReturnCodeDesc(fCmdRet);
-                //WriteLog(lrtxtLog, strLog, 1);
             }
             else if (m.Msg == WM_SENDBUFF)
             {
@@ -351,46 +596,47 @@ namespace UHFReader288Demo
         DataTable dataTable_time = new DataTable();
         private void updateEPC(string sEPC, string RSSI, string str_ant, int phase_begin, int phase_end, int freqkhz)
         {
+            //Console.WriteLine(dt.Rows.Count);
 
             if (epclist.Count == 0) //có EPC đầu tiên
             {
-
-                epclist.Add(sEPC);
                
+                epclist.Add(sEPC);
                 NewCardNum++;
                 ctnNumberEPC++;
                 dt = dataGridView1.DataSource as DataTable;
-                dt = new DataTable();
-                dt.Columns.Add("Column1", Type.GetType("System.String"));
-                dt.Columns.Add("Column2", Type.GetType("System.String"));
-                dt.Columns.Add("Column3", Type.GetType("System.String"));
-                dt.Columns.Add("Column4", Type.GetType("System.String"));
-                dt.Columns.Add("Column5", Type.GetType("System.String"));
-                dt.Columns.Add("Column6", Type.GetType("System.String"));
-                dt.Columns.Add("Column7", Type.GetType("System.String"));
-                dt.Columns.Add("Column8", Type.GetType("System.String"));
-                DataRow dr = dt.NewRow();
-                dr["Column1"] = (dt.Rows.Count + 1).ToString();
-                dr["Column2"] = sEPC;
-                dr["Column3"] = "1";
-                dr["Column4"] = RSSI;
-                dr["Column5"] = String.Format("{0:N3}", phase_begin * 0.087f % 180);
-                dr["Column6"] = String.Format("{0:N3}", phase_end * 0.087f % 180);
-                dr["Column7"] = str_ant;
-                dr["Column8"] = freqkhz + "";
-                dt.Rows.Add(dr);
-                //comboBox_EPC.Items.Add(sEPC);
-                //cbEPC.Items.Add(sEPC);
 
-                //Console.WriteLine("check epclist 1");
-                //Console.WriteLine(sEPC + " " + ctnNumberEPC + " " + RSSI + " " + 1);
+                if (dt == null)
+                {
+                    dt = new DataTable();
+                    dt.Columns.Add("Column1", Type.GetType("System.String"));
+                    dt.Columns.Add("Column2", Type.GetType("System.String"));
+                    dt.Columns.Add("Column3", Type.GetType("System.String"));
+                    dt.Columns.Add("Column4", Type.GetType("System.String"));
+                    dt.Columns.Add("Column5", Type.GetType("System.String"));
+                    dt.Columns.Add("Column6", Type.GetType("System.String"));
+                    dt.Columns.Add("Column7", Type.GetType("System.String"));
+                    dt.Columns.Add("Column8", Type.GetType("System.String"));
+                    DataRow dr = dt.NewRow();
+                    dr["Column1"] = (dt.Rows.Count + 1).ToString();
+                    dr["Column2"] = sEPC;
+                    dr["Column3"] = "1";
+                    dr["Column4"] = RSSI;
+                    dr["Column5"] = String.Format("{0:N3}", phase_begin * 0.087f % 180);
+                    dr["Column6"] = String.Format("{0:N3}", phase_end * 0.087f % 180);
+                    dr["Column7"] = str_ant;
+                    dr["Column8"] = freqkhz + "";
+                    dt.Rows.Add(dr);
+                }
+
             }
             else
             {
                 int index = epclist.IndexOf(sEPC);
                 if (index == -1)// có EPC mới thứ 2 trở đi
                 {
-                 
+
+
                     NewCardNum++;
                     ctnNumberEPC++;
                     epclist.Add(sEPC);
@@ -405,36 +651,108 @@ namespace UHFReader288Demo
                     dr2["Column7"] = str_ant;
                     dr2["Column8"] = freqkhz + "";
                     dt.Rows.Add(dr2);
-                    //comboBox_EPC.Items.Add(sEPC);
-                    //cbEPC.Items.Add(sEPC);
-                    //Console.WriteLine("check epclist 2");
-                    //Console.WriteLine(sEPC + " " + ctnNumberEPC + " " + RSSI + " " + 1);
 
                 }
                 else
                 {
+
                     DataRow dr = dt.Rows[index];
                     int cnt = int.Parse(dr["Column3"].ToString());
                     cnt++;
-                    
                     dt.Rows[index]["Column3"] = cnt.ToString();
                     dt.Rows[index]["Column4"] = RSSI;
                     dt.Rows[index]["Column5"] = String.Format("{0:N3}", phase_begin * 0.087f % 180);
                     dt.Rows[index]["Column6"] = String.Format("{0:N3}", phase_end * 0.087f % 180);
                     dt.Rows[index]["Column7"] = str_ant;
                     dt.Rows[index]["Column8"] = freqkhz + "";
-                    //AddOrUpdateData(dataTable_RSSI, epclist[index], index, RSSI, cnt);
-                    //AddOrUpdateData(dataTable_Phase_begin, epclist[index], index, String.Format("{0:N3}", phase_begin * 0.087f % 180), cnt);
-                    //AddOrUpdateData(dataTable_Phase_end, epclist[index], index, String.Format("{0:N3}", phase_end * 0.087f % 180), cnt);
-                    //AddOrUpdateData(dataTable_Antenna, epclist[index], index, str_ant, cnt);
-                    //AddOrUpdateData(dataTable_time, epclist[index], index, (System.Environment.TickCount - total_time).ToString(), cnt);
-                    //Console.WriteLine((System.Environment.TickCount - total_time).ToString());
-                    //ExportToExcel(epclist[index], RSSI,cnt, index,1, @"D:\NextwaveIndustries\RFID\data\file.xlsx");
+                    
+
                 }
             }
-            //Console.WriteLine(sEPC);
+
+            //Console.WriteLine(str_ant);
             //UpdateDataEPCApi();
         }
+        private async void RemoveDataEpc(string targetEPC)
+        {
+            bool found = false;
+            //timer1.Enabled = false;
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (!row.IsNewRow)
+                {
+                    if (row.Cells[1].Value != null && row.Cells[1].Value.ToString() == targetEPC)
+                    {
+                        row.Cells[1].Value = null;
+                        epclist.Remove(targetEPC);
+
+                        dataGridView1.Rows.Remove(row);
+                        UpdateDataEPCApi();
+
+                        found = true;
+                        break;
+                        
+                    }
+                }
+            }
+
+            if (found)
+            {
+
+                pipeServer.SetMessage("ok");
+                for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                {
+                    if (!dataGridView1.Rows[i].IsNewRow)
+                    {
+                        dataGridView1.Rows[i].Cells[0].Value = (i + 1).ToString();
+                    }
+                }
+            }
+            else
+            {
+                pipeServer.SetMessage("notexist");
+            }
+
+            
+  
+
+            //timer1.Enabled = true;
+        }
+
+
+       
+
+        private void UpdateDataEPCApi()
+        {
+            //StopscanData();
+            pipeServer.ClearAllData();
+
+            if (dataGridView1.DataSource is DataTable dt)
+            {
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    if (!row.IsNewRow)
+                    {
+                        if (row.Cells[1].Value != null && !string.IsNullOrEmpty(row.Cells[1].Value.ToString()))
+                        {
+                            string epc = row.Cells[1].Value.ToString();
+                            int ctn = 0;
+                            if (int.TryParse(row.Cells[2].Value?.ToString(), out ctn))
+                            {
+                                dataEPC bufferEPC = new dataEPC(epc, ctn, DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ss"));
+                                pipeServer.AddData(bufferEPC);
+
+                            }
+                            else
+                            {
+                                Console.WriteLine($"Invalid count value for EPC: {epc}");
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         private void AddOrUpdateData(DataTable dataTable, string sEPC, int index, string RSSI, int cnt)
         {
             DataRow row = dataTable.AsEnumerable().FirstOrDefault(r => r["sEPC"].ToString() == sEPC);
@@ -493,11 +811,7 @@ namespace UHFReader288Demo
                 logRichTxt.ScrollToCaret();
             }
         }
-        /// <summary>
-        /// 16进制数组字符串转换
-        /// </summary>
-        /// <param name="s"></param>
-        /// <returns></returns>
+
         #region
         public static byte[] HexStringToByteArray(string s)
         {
@@ -517,11 +831,7 @@ namespace UHFReader288Demo
 
         }
         #endregion
-        /// <summary>
-        /// 错误代码
-        /// </summary>
-        /// <param name="cmdRet"></param>
-        /// <returns></returns>
+
         #region 
         private string GetReturnCodeDesc(int cmdRet)
         {
@@ -641,7 +951,7 @@ namespace UHFReader288Demo
             lxLedControl4.Text = "0";
             lxLedControl5.Text = "0";
             // dataGridView1.DataSource = null;
-            text_RDVersion.Text = "";
+            //text_RDVersion.Text = "";
             text_MDVersion.Text = "";
             text_Serial.Text = "";
             timer_answer.Enabled = false;
@@ -653,7 +963,7 @@ namespace UHFReader288Demo
             gpb_GPIO.Enabled = false;
             gpb_beep.Enabled = false;
             gpb_MDVersion.Enabled = false;
-            gpb_RDVersion.Enabled = false;
+            //gpb_RDVersion.Enabled = false;
             gpb_checkant.Enabled = false;
             gpb_DBM.Enabled = false;
             gpb_Serial.Enabled = false;
@@ -683,7 +993,7 @@ namespace UHFReader288Demo
             gpb_GPIO.Enabled = true;
             gpb_beep.Enabled = true;
             gpb_MDVersion.Enabled = true;
-            gpb_RDVersion.Enabled = true;
+            //gpb_RDVersion.Enabled = true;
             gpb_checkant.Enabled = true;
             gpb_DBM.Enabled = true;
             gpb_Serial.Enabled = true;
@@ -781,15 +1091,13 @@ namespace UHFReader288Demo
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-           // StartAspNetCoreApp();
+            
             string[] network = GetNetWorkInfo();
-            timer1.Interval = 500;
+   
 
-            gpb_rs232.Enabled = false;
+            gpb_rs232.Enabled = true;
 
             rb_rs232.Checked = true;
-            ComboBox_COM.SelectedIndex = 8;
-            ComboBox_baud2.SelectedIndex = 0;
 
             com_Q.SelectedIndex = 4;
             com_Target.SelectedIndex = 0;
@@ -805,7 +1113,7 @@ namespace UHFReader288Demo
             DisabledForm();
             radioButton_band2.Checked = true;
             ComboBox_baud.SelectedIndex = 3;
-            ComboBox_PowerDbm.SelectedIndex = 33;
+            
             for (i = 1; i < 256; i++)
             {
                 ComboBox_RelayTime.Items.Add(Convert.ToString(i));
@@ -834,18 +1142,18 @@ namespace UHFReader288Demo
 
             pipeServer = new NamedPipeServer();
             DevList = new List<DeviceClass>();
+            button4.Enabled = false;
 
         }
 
         private void btConnect232_Click(object sender, EventArgs e)
         {
-            int portNum = ComboBox_COM.SelectedIndex + 1;
+            int portNum = ComboBox_COM.SelectedIndex + 1 ;
             int FrmPortIndex = 0;
             string strException = string.Empty;
             fBaud = Convert.ToByte(ComboBox_baud2.SelectedIndex);
             if (fBaud > 2)
                 fBaud = Convert.ToByte(fBaud + 2);
-            //Console.WriteLine(fBaud.ToString() + ".................................");
             fComAdr = 255;
             fCmdRet = RWDev.OpenComPort(portNum, ref fComAdr, fBaud, ref FrmPortIndex);
             if (fCmdRet != 0)
@@ -860,8 +1168,6 @@ namespace UHFReader288Demo
                 string strLog = "Connected: " + ComboBox_COM.Text + "@" + ComboBox_baud2.Text;
                 WriteLog(lrtxtLog, strLog, 0);
             }
-            //Console.WriteLine(fCmdRet.ToString()+".................................");
-
             EnabledForm();
             btConnect232.Enabled = false;
             btDisConnect232.Enabled = true;
@@ -873,6 +1179,8 @@ namespace UHFReader288Demo
             //btGetInformation_Click(null, null);
             if (FrmPortIndex > 0)
                 RWDev.InitRFIDCallBack(elegateRFIDCallBack, true, FrmPortIndex);
+
+            SaveSettings();
         }
 
         private void btDisConnect232_Click(object sender, EventArgs e)
@@ -926,7 +1234,7 @@ namespace UHFReader288Demo
             total_tagnum = 0;
             total_time = System.Environment.TickCount;
             lrtxtLog.Clear();
-            pipeServer.ClearData();
+            pipeServer.ClearAllData();
 
 
         }
@@ -942,8 +1250,7 @@ namespace UHFReader288Demo
 
    
             ctnNumberEPC = 0;
-            //if (tabControl2.SelectedTab == tabPage_answer)
-            //{
+
             lxLedControl1.Text = "0";
             lxLedControl2.Text = "0";
             lxLedControl3.Text = "0";
@@ -953,23 +1260,11 @@ namespace UHFReader288Demo
             epclist.Clear();
             tidlist.Clear();
             dataGridView1.DataSource = null;
-       
-            //}
-
-
-            //if (tabControl3.SelectedTab == tabPage8)
-            //{
-    
-            //}
-            //if (tabControl3.SelectedTab == tabPage9)
-            //{
-          
-            //}
+  
             total_tagnum = 0;
             total_time = System.Environment.TickCount;
-            //comboBox_EPC.Items.Clear();
             lrtxtLog.Clear();
-            pipeServer.ClearData();
+            pipeServer.ClearAllData();
 
         }
         byte[] antlist = new byte[16];
@@ -997,20 +1292,20 @@ namespace UHFReader288Demo
 
             if (btIventoryG2.Text == "Start")
             {
-                timer1.Enabled = true;
-
-                lxLedControl1.Text = "0";
+                //timer1.Enabled = true;
+                btIventoryG2.ForeColor = Color.DarkBlue;
+                //lxLedControl1.Text = "0";
                 lxLedControl2.Text = "0";
                 lxLedControl3.Text = "0";
                 lxLedControl4.Text = "0";
                 lxLedControl5.Text = "0";
                 lxLedControl6.Text = "0";
-                reflasg = false;
-                epclist.Clear();
-                tidlist.Clear();
-                curList.Clear();
-                dataGridView1.DataSource = null;
-                lrtxtLog.Clear();
+                //reflasg = false;
+                //epclist.Clear();
+               // tidlist.Clear();
+                //curList.Clear();
+                //dataGridView1.DataSource = null;
+                //lrtxtLog.Clear();
                 //comboBox_EPC.Items.Clear();
                 //text_epc.Text = "";
                 AA_times = 0;
@@ -1057,11 +1352,12 @@ namespace UHFReader288Demo
 
                 if (check_phase.Checked) Qvalue |= 0x10;
 
-                total_tagnum = 0;
+                //total_tagnum = 0;
                 targettimes = Convert.ToInt32(text_target.Text);
                 total_time = System.Environment.TickCount;
                 fIsInventoryScan = false;
                 btIventoryG2.BackColor = Color.Indigo;
+                btIventoryG2.ForeColor = Color.White;
                 btIventoryG2.Text = "Stop";
                 Array.Clear(antlist, 0, 16);
                 int SelectAntenna = 0;
@@ -1076,7 +1372,9 @@ namespace UHFReader288Demo
                     antlist[1] = 1;
                     InAnt = 0x81;
                     SelectAntenna |= 0x0002;
+                 
                 }
+
                 if (check_ant3.Checked)
                 {
                     antlist[2] = 1;
@@ -1089,9 +1387,6 @@ namespace UHFReader288Demo
                     InAnt = 0x83;
                     SelectAntenna |= 0x0008;
                 }
-
-
-
                 PresetTarget(readMode, SelectAntenna);
 
                 Target = (byte)com_Target.SelectedIndex;
@@ -1105,7 +1400,6 @@ namespace UHFReader288Demo
                 }
   
                 rb_epc.Enabled = false;
-      
             }
             else
             {
@@ -1113,8 +1407,9 @@ namespace UHFReader288Demo
                 toStopThread = true;
                 btIventoryG2.Enabled = false;
                 btIventoryG2.BackColor = Color.Transparent;
+                btIventoryG2.ForeColor = Color.DarkBlue;
                 btIventoryG2.Text = "Stoping";
-                timer1.Enabled = false;
+                //timer1.Enabled = false;
 
 
             }
@@ -1188,7 +1483,74 @@ namespace UHFReader288Demo
 
         }
 
-        #region ///EPC或TID查询
+
+        //private void flash_G2()
+        //{
+        //    byte Ant = 0;
+        //    int TagNum = 0;
+        //    int Totallen = 0;
+        //    byte[] EPC = new byte[50000];
+        //    byte MaskMem = 0;
+        //    byte[] MaskAdr = new byte[2];
+        //    byte MaskLen = 0;
+        //    byte[] MaskData = new byte[100];
+        //    byte MaskFlag = 0;
+        //    MaskFlag = 0;
+        //    int cbtime = System.Environment.TickCount;
+        //    CardNum = 0;
+        //    tagrate = 0;
+        //    NewCardNum = 0;
+        //    fCmdRet = RWDev.Inventory_G2(ref fComAdr, Qvalue, Session, MaskMem, MaskAdr, MaskLen, MaskData, MaskFlag, tidAddr, tidLen, TIDFlag, Target, InAnt, Scantime, FastFlag, EPC, ref Ant, ref Totallen, ref TagNum, frmcomportindex);
+        //    //Console.WriteLine($"CardNum:" + CardNum);
+        //    int cmdTime = System.Environment.TickCount - cbtime;
+        //    if ((fCmdRet != 0x01) && (fCmdRet != 0x02) && (fCmdRet != 0xF8) && (fCmdRet != 0xF9) && (fCmdRet != 0xEE) && (fCmdRet != 0xFF))
+        //    {
+
+        //    }
+        //    if (fCmdRet == 0x30)
+        //    {
+        //        CardNum = 0;
+        //    }
+        //    if (CardNum == 0)
+        //    {
+        //        if (Session > 1)
+        //            AA_times = AA_times + 1;
+        //    }
+        //    else
+        //    {
+        //        if ((ModeType == 2) && (readMode == 253 || readMode == 254) && (NewCardNum == 0))
+        //            AA_times = AA_times + 1;
+        //        else
+        //            AA_times = 0;
+        //    }
+        //    if ((fCmdRet == 1) || (fCmdRet == 2) || (fCmdRet == 0xFB) || (fCmdRet == 0x26))
+        //    {
+        //        if (cmdTime > CommunicationTime)
+        //            cmdTime = cmdTime - CommunicationTime;
+        //        if (cmdTime > 0)
+        //        {
+        //            tagrate = (CardNum * 1000) / cmdTime;
+        //            IntPtr ptrWnd = IntPtr.Zero;
+        //            ptrWnd = FindWindow(null, "UHFReader288 Demo V6.1");
+        //            if (ptrWnd != IntPtr.Zero)
+        //            {
+        //                string para = tagrate.ToString() + "," + total_tagnum.ToString() + "," + cmdTime.ToString();
+        //                SendMessage(ptrWnd, WM_SENDTAGSTAT, IntPtr.Zero, para);
+        //            }
+        //        }
+
+        //    }
+        //    IntPtr ptrWnd1 = IntPtr.Zero;
+        //    ptrWnd1 = FindWindow(null, "UHFReader288 Demo V6.1");
+        //    if (ptrWnd1 != IntPtr.Zero)
+        //    {
+        //        string para = fCmdRet.ToString();
+        //        SendMessage(ptrWnd1, WM_SENDSTATU, IntPtr.Zero, para);
+        //    }
+        //    ptrWnd1 = IntPtr.Zero;
+
+
+        //}
         private void flash_G2()
         {
             byte Ant = 0;
@@ -1206,12 +1568,9 @@ namespace UHFReader288Demo
             tagrate = 0;
             NewCardNum = 0;
             fCmdRet = RWDev.Inventory_G2(ref fComAdr, Qvalue, Session, MaskMem, MaskAdr, MaskLen, MaskData, MaskFlag, tidAddr, tidLen, TIDFlag, Target, InAnt, Scantime, FastFlag, EPC, ref Ant, ref Totallen, ref TagNum, frmcomportindex);
-            //Console.WriteLine($"CardNum:" + CardNum);
-            int cmdTime = System.Environment.TickCount - cbtime;
-            if ((fCmdRet != 0x01) && (fCmdRet != 0x02) && (fCmdRet != 0xF8) && (fCmdRet != 0xF9) && (fCmdRet != 0xEE) && (fCmdRet != 0xFF))
-            {
-               
-            }
+            Console.WriteLine($"EPC: {EPC}");
+            int cmdTime = System.Environment.TickCount - cbtime;//命令时间
+            
             if (fCmdRet == 0x30)
             {
                 CardNum = 0;
@@ -1219,12 +1578,12 @@ namespace UHFReader288Demo
             if (CardNum == 0)
             {
                 if (Session > 1)
-                    AA_times = AA_times + 1;//没有得到标签只更新状态栏
+                    AA_times = AA_times + 1;
             }
             else
             {
                 if ((ModeType == 2) && (readMode == 253 || readMode == 254) && (NewCardNum == 0))
-                    AA_times = AA_times + 1;//没有得到新标签
+                    AA_times = AA_times + 1;
                 else
                     AA_times = 0;
             }
@@ -1237,7 +1596,7 @@ namespace UHFReader288Demo
                     tagrate = (CardNum * 1000) / cmdTime;
                     IntPtr ptrWnd = IntPtr.Zero;
                     ptrWnd = FindWindow(null, "UHFReader288 Demo V6.1");
-                    if (ptrWnd != IntPtr.Zero)
+                    if (ptrWnd != IntPtr.Zero)         
                     {
                         string para = tagrate.ToString() + "," + total_tagnum.ToString() + "," + cmdTime.ToString();
                         SendMessage(ptrWnd, WM_SENDTAGSTAT, IntPtr.Zero, para);
@@ -1247,7 +1606,7 @@ namespace UHFReader288Demo
             }
             IntPtr ptrWnd1 = IntPtr.Zero;
             ptrWnd1 = FindWindow(null, "UHFReader288 Demo V6.1");
-            if (ptrWnd1 != IntPtr.Zero)
+            if (ptrWnd1 != IntPtr.Zero)       
             {
                 string para = fCmdRet.ToString();
                 SendMessage(ptrWnd1, WM_SENDSTATU, IntPtr.Zero, para);
@@ -1256,9 +1615,9 @@ namespace UHFReader288Demo
 
 
         }
-        #endregion
 
-     
+
+
         private void inventory()
         {
             fIsInventoryScan = true;
@@ -1269,9 +1628,9 @@ namespace UHFReader288Demo
                     if (Session == 255)
                     {
                         FastFlag = 0;
-                     
-                            flash_G2();
-                        
+
+                        flash_G2();
+
 
                     }
                     else
@@ -1279,7 +1638,6 @@ namespace UHFReader288Demo
                         for (int m = 0; m < AntennaNum; m++)
                         {
                             InAnt = (byte)(m | 0x80);
-                           // Console.WriteLine("Giá trị của InAnt: " + InAnt);
                             FastFlag = 1;
                             if (antlist[m] == 1)
                             {
@@ -1287,18 +1645,20 @@ namespace UHFReader288Demo
                                 {
                                     if ((check_num.Checked) && (AA_times + 1 > targettimes))
                                     {
-                                        Target = Convert.ToByte(1 - Target); 
+                                        Target = Convert.ToByte(1 - Target);
                                         AA_times = 0;
                                     }
                                 }
-                                
+
+                                {
                                     flash_G2();
                                     PresetProfile();
-                                
+
+                                }
                             }
                         }
+                        Thread.Sleep(5);
                     }
-                    Thread.Sleep(5);
                 }
                 catch (System.Exception ex)
                 {
@@ -1320,11 +1680,11 @@ namespace UHFReader288Demo
 
                 if (fIsInventoryScan)
                 {
-                    toStopThread = true;//标志，接收数据线程判断stop为true，正常情况下会自动退出线程           
+                    toStopThread = true;       
 
                     btIventoryG2.Text = "Start";
                     
-                    mythread.Abort();//若线程无法退出，强制结束
+                    mythread.Abort();
                     timer_answer.Enabled = false;
                     fIsInventoryScan = false;
                 }
@@ -1377,7 +1737,7 @@ namespace UHFReader288Demo
                             Profile = 0xC1;
                         fCmdRet = RWDev.SetProfile(ref fComAdr, ref Profile, frmcomportindex);
                         AA_times = 0;
-                        Target = Convert.ToByte(1 - Target);  //如果连续2次未读到卡片，A/B状态切换。
+                        Target = Convert.ToByte(1 - Target); 
                     }
 
                 }
@@ -1396,7 +1756,7 @@ namespace UHFReader288Demo
         {
             IntPtr ptrWnd = IntPtr.Zero;
             ptrWnd = FindWindow(null, "UHFReader288 Demo V6.1");
-            if (ptrWnd != IntPtr.Zero)         // 检查当前统计窗口是否打开
+            if (ptrWnd != IntPtr.Zero)         
             {
                 string para = fCmdRet.ToString();
                 SendMessage(ptrWnd, WM_SHOWNUM, IntPtr.Zero, para);
@@ -1813,7 +2173,9 @@ namespace UHFReader288Demo
             {
                 string strLog = "Set power success ";
                 WriteLog(lrtxtLog, strLog, 0);
+                SaveSettings();
             }
+           
         }
 
         private void btBaudRate_Click(object sender, EventArgs e)
@@ -3397,10 +3759,6 @@ namespace UHFReader288Demo
             }
         }
 
-        private void uant3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
 
         List<string> ulist = new List<string>();
 
@@ -3421,61 +3779,29 @@ namespace UHFReader288Demo
 
 
 
-        private void button4_Click_1(object sender, EventArgs e)
-        {
-        }
-        private void insertEPCToDatabase(int No, string EPC, int count)
-        {
-            using (SqlCommand cmd = new SqlCommand("INSERT INTO TableTest values('" + No + "','" + EPC + "','" + count + "', getdate())", con))
-            {
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("successfully Inserted,");
-
-            }
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void tabtest_SQL_Click(object sender, EventArgs e)
-        {
-
-        }
-     
-
-
-      
-
-        private void btconnect_Click(object sender, EventArgs e)
-        {
-
-        }
-
    
         public void scanData()
         {
 
             if (btIventoryG2.Text == "Start")
             {
-                timer1.Enabled = true;
-                lxLedControl1.Text = "0";
+                btIventoryG2.ForeColor = Color.DarkBlue;
+                //timer1.Enabled = true;
+                // lxLedControl1.Text = "0";
                 lxLedControl2.Text = "0";
                 lxLedControl3.Text = "0";
                 lxLedControl4.Text = "0";
                 lxLedControl5.Text = "0";
                 lxLedControl6.Text = "0";
-                reflasg = false;
-                epclist.Clear();
-                tidlist.Clear();
-                curList.Clear();
-                dataGridView1.DataSource = null;
-                lrtxtLog.Clear();
+                //reflasg = false;
+                //epclist.Clear();
+                //tidlist.Clear();
+                //curList.Clear();
+                //dataGridView1.DataSource = null;
+                //lrtxtLog.Clear();
                 //comboBox_EPC.Items.Clear();
                 //text_epc.Text = "";
-                AA_times = 0;
+                //AA_times = 0;
 
                 Scantime = Convert.ToByte(com_scantime.SelectedIndex);
                 if (checkBox_rate.Checked)
@@ -3518,11 +3844,12 @@ namespace UHFReader288Demo
 
                 if (check_phase.Checked) Qvalue |= 0x10;
 
-                total_tagnum = 0;
+                //total_tagnum = 0;
                 targettimes = Convert.ToInt32(text_target.Text);
                 total_time = System.Environment.TickCount;
                 fIsInventoryScan = false;
                 btIventoryG2.BackColor = Color.Indigo;
+                btIventoryG2.ForeColor = Color.White;
                 btIventoryG2.Text = "Stop";
                 Array.Clear(antlist, 0, 16);
                 int SelectAntenna = 0;
@@ -3576,47 +3903,20 @@ namespace UHFReader288Demo
 
             if (btIventoryG2.Text != "Start")
             {
-                timer1.Enabled = false;
+                //timer1.Enabled = false;
                 RWDev.StopImmediately(ref fComAdr, frmcomportindex);
                 toStopThread = true;
                 btIventoryG2.Enabled = false;
                 btIventoryG2.BackColor = Color.Transparent;
+                btIventoryG2.ForeColor = Color.DarkBlue;
                 btIventoryG2.Text = "Stoping";
-
-
             }
-
         }
 
-        private void button10_Click_1(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void button17_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-
-
-      
-        private async void button18_Click(object sender, EventArgs e)
-        {
-           
-        }
 
         private Process aspNetCoreProcess;
+
         
-
-
-        string jsonDataBarcode ;
-        string ip = "192.168.1.21:3003";
-        private async void button20_Click(object sender, EventArgs e)
-        {
-
-        } 
-
         private async void SendEPCList()
         {
             try
@@ -3629,74 +3929,435 @@ namespace UHFReader288Demo
                 MessageBox.Show("Error sending EPC list: " + ex.Message);
             }
         }
-
+        bool isConnected = false;
         private HubConnection _hubConnection;
-
         public async void ConnectToHub()
         {
             _hubConnection = new HubConnectionBuilder()
-                .WithUrl("https://localhost:7024/scanhub")
-            .Build();
+                .WithUrl("http://localhost:7024/scanhub")
+                .Build();
 
-            _hubConnection.On("ReceiveMessage", (string message) =>
+            RegisterHubEvents();
+
+            _hubConnection.Closed += async (error) =>
             {
-                if (message == "StartScan")
-                {
-                    this.Invoke((Action)scanData);
-                }
+                isConnected = false;
+                WriteLog(lrtxtLog, "Connection lost. Attempting to reconnect...", 1);
+                await Task.Delay(1000);  
 
-                else if (message == "StopScan")
-                {
-                    this.Invoke((Action)StopscanData);
-                }
-                else if (message == "Refresh")
-                {
-                    this.Invoke((Action)refesh);
-                }
-                //else if (message == "Request")
-                //{
-                //    this.Invoke((Action)UpdateDataEPCApi);
-                //}
-
-            });
+                ConnectToHub(); 
+            };
 
             try
             {
                 await _hubConnection.StartAsync();
+                isConnected = true;
+                WriteLog(lrtxtLog, "Connect to web api successfully", 1);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Connection error: " + ex.Message);
+                WriteLog(lrtxtLog, "Connection error: " + ex.Message, 1);
+                await Task.Delay(1000);  
+                ConnectToHub(); 
+            }
+        }
+
+        private void RegisterHubEvents()
+        {
+            _hubConnection.On("ReceiveMessage", (string message) =>
+            {
+                ProcessReceivedMessage(message);
+            });
+        }
+
+        private void ProcessReceivedMessage(string message)
+        {
+            if (message.StartsWith("Lamp:"))
+            {
+                var parts = message.Split(':');
+                string mode = parts[1];
+                string lampId = parts[2];
+                float time = float.Parse(parts[3]);
+
+                if (lampId == "green")
+                {
+                    if (mode == "simple")
+                    {
+                        this.Invoke((Action)(() => onGreenLamp(time)));
+                    }
+                    else if (mode == "blink")
+                    {
+                        this.Invoke((Action)(() => blinkGreenLamp(time)));
+                    }
+                }
+                else if (lampId == "red")
+                {
+                    if (mode == "simple")
+                    {
+                        this.Invoke((Action)(() => onRedLamp(time)));
+                    }
+                    else if (mode == "blink")
+                    {
+                        this.Invoke((Action)(() => blinkRedLamp(time)));
+                    }
+                }
+            }
+            else if (message.StartsWith("Buzzer:"))
+            {
+                float time = float.Parse(message.Split(':')[1]);
+                this.Invoke((Action)(() => onBuzzer(time)));
+            }
+            else if (message == "ClearAllData")
+            {
+                this.Invoke((Action)refesh);
+            }
+            else if (message.StartsWith("Mode:"))
+            {
+                int mode = int.Parse(message.Split(':')[1]);
+                this.Invoke((Action)(() => selectMode(mode)));
+            }
+            else if (message.StartsWith("RemoveData:"))
+            {
+                string epcRemove = message.Split(':')[1];
+                this.Invoke((Action)(() => RemoveDataEpc(epcRemove)));
+            }
+            else if (message == "StartScan")
+            {
+                this.Invoke((Action)scanData);
+            }
+            else if (message == "StopScan")
+            {
+                this.Invoke((Action)StopscanData);
+            }
+            else if (message == "Request")
+            {
+                this.Invoke((Action)UpdateDataEPCApi);
             }
         }
 
 
-        private void UpdateDataEPCApi()
+        public void PrintDataTable(DataTable dt)
         {
-            pipeServer.ClearData();
+            if (dt == null)
+            {
+                Console.WriteLine("DataTable is null.");
+                return;
+            }
+
+            if (dt.Columns.Count == 0)
+            {
+                Console.WriteLine("DataTable has no columns.");
+                return;
+            }
+            foreach (DataColumn column in dt.Columns)
+            {
+                Console.Write(column.ColumnName + "\t");
+            }
+            Console.WriteLine();
+
+            foreach (DataRow row in dt.Rows)
+            {
+                foreach (DataColumn column in dt.Columns)
+                {
+                    Console.Write(row[column] + "\t");
+                }
+                Console.WriteLine();
+            }
+        }
+        private void UpdateDataTableFromDataGridView(DataTable dt)
+        {
+
+            foreach (DataGridViewColumn column in dataGridView1.Columns)
+            {
+                dt.Columns.Add(column.Name, column.ValueType);
+            }
 
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
-                if (row.Cells[1].Value != null)
+                if (!row.IsNewRow) 
                 {
-                    string epc = row.Cells[1].Value.ToString();
-                    int ctn = int.Parse(row.Cells[2].Value.ToString());
-                    dataEPC bufferEPC = new dataEPC(epc, ctn, DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ss"));
-                    pipeServer.AddData(bufferEPC);
-
+                    DataRow dataRow = dt.NewRow();
+                    foreach (DataGridViewColumn column in dataGridView1.Columns)
+                    {
+                        dataRow[column.Name] = row.Cells[column.Index].Value;
+                    }
+                    dt.Rows.Add(dataRow);
                 }
             }
         }
 
+        
+
+
+       
+
+        private void btConnectMCU_Click(object sender, EventArgs e)
+        {
+            if (comboBoxBaud.SelectedItem == null)
+            {
+                MessageBox.Show("You have not selected baudrate.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                if (!serialPort2.IsOpen)
+                {
+                    try
+                    {
+                        Control.CheckForIllegalCrossThreadCalls = false;
+                        serialPort2.PortName = comboBoxPort.SelectedItem.ToString();
+                        serialPort2.BaudRate = int.Parse(comboBoxBaud.SelectedItem.ToString());
+                        serialPort2.Open();
+                        btConnectMCU.Enabled = false;
+                        btDisConnectMCU.Enabled = true;
+
+                        comboBoxPort.Enabled = false;
+                        comboBoxBaud.Enabled = false;
+                        btConnectMCU.ForeColor = Color.Black;
+                        btDisConnectMCU.ForeColor = Color.Indigo;
+                        WriteLog(lrtxtLog, "Successfully connected to " + comboBoxPort.SelectedItem?.ToString(), 1);
+                    }
+                    catch (UnauthorizedAccessException)
+                    {
+                        MessageBox.Show("Access to the port is denied. Please check if the port is already in use or you do not have the necessary permissions.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            SaveSettings();
+        }
+        public void onGreenLamp(float time)
+        {
+            if (serialPort2.IsOpen)
+            {
+                serialPort2.Write("G");
+                serialPort2.Write("0");
+                serialPort2.Write(time.ToString().PadLeft(8, '0'));
+            }
+            else
+            {
+                MessageBox.Show($"serialPort not available");
+            }
+        }
+        public void blinkGreenLamp(float time)
+        {
+            if (serialPort2.IsOpen)
+            {
+                serialPort2.Write("G");
+                serialPort2.Write("1");
+                serialPort2.Write(time.ToString().PadLeft(8, '0'));
+            }
+            else
+            {
+                MessageBox.Show($"serialPort not available");
+            }
+        }
+        public void onRedLamp(float time)
+        {
+            if (serialPort2.IsOpen)
+            {
+                serialPort2.Write("R");
+                serialPort2.Write("0");
+                serialPort2.Write(time.ToString().PadLeft(8, '0'));
+            }
+            else
+            {
+                MessageBox.Show($"serialPort not available");
+            }
+        }
+        public void blinkRedLamp(float time)
+        {
+            if (serialPort2.IsOpen)
+            {
+                serialPort2.Write("R");
+                serialPort2.Write("1");
+     
+                serialPort2.Write(time.ToString().PadLeft(8, '0'));
+            }
+            else
+            {
+                MessageBox.Show($"serialPort not available");
+            }
+        }
+        public void onBuzzer(float time)
+        {
+            if (serialPort2.IsOpen)
+            {
+                serialPort2.Write("B");
+                serialPort2.Write("1");
+                serialPort2.Write(time.ToString().PadLeft(8, '0'));
+            }
+            else
+            {
+                MessageBox.Show($"serialPort not available");
+            }
+        }
+        public void selectMode(int mode)
+        {
+            if (serialPort2.IsOpen)
+            {
+                if (mode == 1) //auto
+                {
+                    serialPort2.Write("M");
+                    serialPort2.Write("1");
+                    serialPort2.Write("********");
+                    WriteLog(lrtxtLog, "Set Auto Mode successfuly", 1);
+                }
+                else if (mode == 0) //manual
+                {
+                    serialPort2.Write("M");
+                    serialPort2.Write("0");
+                    serialPort2.Write("********");
+                    WriteLog(lrtxtLog, "Set Maunal Mode successfuly", 1);
+                }
+            }
+            else
+            {
+                MessageBox.Show($"serialPort not available");
+            }
+        }
+
+        private void btDisConnectMCU_Click(object sender, EventArgs e)
+        {
+            serialPort2.Close();
+            btConnectMCU.Enabled = true;
+            btDisConnectMCU.Enabled = false;
+            comboBoxPort.Enabled = true;
+            comboBoxBaud.Enabled = true;
+            btConnectMCU.ForeColor = Color.Indigo;
+            btDisConnectMCU.ForeColor = Color.Black;
+        }
+
+       
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SaveSettings();
+            //StopListeningForSerialPortChanges();
+        }
+
+        
+
         private void button3_Click_1(object sender, EventArgs e)
         {
-          
+            if (serialPort2.IsOpen)
+            {
+                selectMode(1);
+                button3.Enabled = false;
+                button4.Enabled = true;
+                
+            }
+
         }
 
-        private void timer1_Tick_1(object sender, EventArgs e)
+        private void button4_Click_1(object sender, EventArgs e)
         {
-            UpdateDataEPCApi();  
+            if (serialPort2.IsOpen)
+            {
+                selectMode(0);
+                button3.Enabled = true;
+                button4.Enabled = false;
+                
+            }
+        }
+
+        private void serialPort2_DataReceived(object sender, SerialDataReceivedEventArgs e)
+        {
+            Console.WriteLine("DataReceived event triggered");
+
+            if (serialPort2.BytesToRead >= 1)
+            {
+                byte[] buffer = new byte[1];
+                serialPort2.Read(buffer, 0, 1);
+                string receivedData = System.Text.Encoding.ASCII.GetString(buffer);
+
+                //Console.WriteLine($"Received data: {receivedData}");
+
+                Invoke((Action)(() =>
+                {
+                    WriteLog(lrtxtLog, receivedData, 1);
+                    //Console.WriteLine("Log updated");
+                }));
+
+                if (receivedData == "1")
+                {
+                    Invoke((Action)(() =>
+                    {
+                        scanData();
+                        //Console.WriteLine("scanData called");
+                    }));
+                }
+                else if (receivedData == "0")
+                {
+                    Invoke((Action)(() =>
+                    {
+                        StopscanData();
+                        //Console.WriteLine("StopscanData called");
+                    }));
+                }
+            }
+
 
         }
+        int power = 20;
+
+        private void setPowerAuto_Click(object sender, EventArgs e)
+        {
+            byte powerDbm = (byte)power;
+            fCmdRet = RWDev.SetRfPower(ref fComAdr, powerDbm, frmcomportindex);
+            if (fCmdRet != 0)
+            {
+                string strLog = "Set power failed: " + GetReturnCodeDesc(fCmdRet);
+                WriteLog(lrtxtLog, strLog, 1);
+            }
+            else
+            {
+                string strLog = "Set" + power + " power success ";
+                WriteLog(lrtxtLog, strLog, 0);
+                SaveSettings();
+            }
+            timer2.Enabled = true;
+            
+        }
+
+        private void StopPowerAuto_Click(object sender, EventArgs e)
+        {
+            timer2.Enabled = false;
+            WriteLog(lrtxtLog, "Stop Power Auto successfuly", 0);
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            if((power+=3) >29)
+            {
+                power = 20;
+            }
+            else
+            {
+                power += 3;
+                byte powerDbm = (byte)power;
+                fCmdRet = RWDev.SetRfPower(ref fComAdr, powerDbm, frmcomportindex);
+                if (fCmdRet != 0)
+                {
+                    string strLog = "Set power failed: " + GetReturnCodeDesc(fCmdRet);
+                    WriteLog(lrtxtLog, strLog, 1);
+                }
+                else
+                {
+                    string strLog = "Set" + power + " power success ";
+                    WriteLog(lrtxtLog, strLog, 0);
+                    SaveSettings();
+                }
+
+            }
+            
+        }
+
+        //private void timer1_Tick_1(object sender, EventArgs e)
+        //{
+        //    UpdateDataEPCApi();
+        //}
     }
 }

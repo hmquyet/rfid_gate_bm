@@ -4,11 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UHFReader288Demo", "UHFReader288Demo.csproj", "{6AFFE265-E5CA-4923-8119-4861750FB3AA}"
-	ProjectSection(ProjectDependencies) = postProject
-		{9FEF5682-BBA0-44AE-B61C-9B7327C53CCA} = {9FEF5682-BBA0-44AE-B61C-9B7327C53CCA}
-	EndProjectSection
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api", "..\api\api.csproj", "{9FEF5682-BBA0-44AE-B61C-9B7327C53CCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,18 +27,6 @@ Global
 		{6AFFE265-E5CA-4923-8119-4861750FB3AA}.Release|x64.Build.0 = Release|x64
 		{6AFFE265-E5CA-4923-8119-4861750FB3AA}.Release|x86.ActiveCfg = Release|x86
 		{6AFFE265-E5CA-4923-8119-4861750FB3AA}.Release|x86.Build.0 = Release|x86
-		{9FEF5682-BBA0-44AE-B61C-9B7327C53CCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9FEF5682-BBA0-44AE-B61C-9B7327C53CCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9FEF5682-BBA0-44AE-B61C-9B7327C53CCA}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{9FEF5682-BBA0-44AE-B61C-9B7327C53CCA}.Debug|x64.Build.0 = Debug|Any CPU
-		{9FEF5682-BBA0-44AE-B61C-9B7327C53CCA}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{9FEF5682-BBA0-44AE-B61C-9B7327C53CCA}.Debug|x86.Build.0 = Debug|Any CPU
-		{9FEF5682-BBA0-44AE-B61C-9B7327C53CCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9FEF5682-BBA0-44AE-B61C-9B7327C53CCA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9FEF5682-BBA0-44AE-B61C-9B7327C53CCA}.Release|x64.ActiveCfg = Release|Any CPU
-		{9FEF5682-BBA0-44AE-B61C-9B7327C53CCA}.Release|x64.Build.0 = Release|Any CPU
-		{9FEF5682-BBA0-44AE-B61C-9B7327C53CCA}.Release|x86.ActiveCfg = Release|Any CPU
-		{9FEF5682-BBA0-44AE-B61C-9B7327C53CCA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

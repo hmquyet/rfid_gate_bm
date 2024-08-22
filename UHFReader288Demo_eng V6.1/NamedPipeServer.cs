@@ -12,6 +12,10 @@ namespace UHFReader288Demo
     public class NamedPipeServer
     {
         private List<dataEPC> _dataList = new List<dataEPC>();
+        private string _message;
+        private readonly object _dataLock = new object();
+        private readonly object _dataListLock = new object();
+        private bool _running = true; // Control flag for server loop
 
         public NamedPipeServer()
         {
@@ -20,77 +24,107 @@ namespace UHFReader288Demo
 
         public void AddData(dataEPC data)
         {
-            _dataList.Add(data);
+           
+                _dataList.Add(data);
+            
         }
-        public void ClearData()
+
+
+        public void ClearAllData()
         {
-            _dataList.Clear();
+           
+                _dataList.Clear();
+             
+           
         }
-        private readonly object _dataListLock = new object();
+
+        public void SetMessage(string message)
+        {
+
+                _message = message;
+            
+        }
+
         private void StartServer()
         {
-            //while (true)
-            //{
-            //    using (var server = new NamedPipeServerStream("StringPipe", PipeDirection.InOut, 1, PipeTransmissionMode.Message, PipeOptions.Asynchronous))
-            //    {
-            //        server.WaitForConnection();
-            //        using (var reader = new StreamReader(server))
-            //        using (var writer = new StreamWriter(server) { AutoFlush = true })
-            //        {
-            //            while (true)
-            //            {
-            //                var request = reader.ReadLine();
-            //                if (request == "GET_STRINGS")
-            //                {
-            //                    // Chuyển danh sách thành JSON và gửi đi
-            //                    var jsonData = JsonConvert.SerializeObject(_dataList);
-            //                    writer.WriteLine(jsonData);
-            //                }
-            //                else
-            //                {
-            //                    break;
-            //                }
-            //            }
-            //        }
-            //    }
-            //}
-
-            while (true)
+            while (_running)
             {
                 try
                 {
                     using (var server = new NamedPipeServerStream("StringPipe", PipeDirection.InOut, 1, PipeTransmissionMode.Message, PipeOptions.Asynchronous))
                     {
+                        
                         server.WaitForConnection();
+                  
+
                         using (var reader = new StreamReader(server))
                         using (var writer = new StreamWriter(server) { AutoFlush = true })
                         {
-                            while (true)
+                            while (_running)
                             {
-                                var request = reader.ReadLine();
-                                if (request == "GET_STRINGS")
+                                try
                                 {
-                                    lock (_dataListLock)
+                                    var request = reader.ReadLine();
+                                    if (request == null)
                                     {
-                                        var jsonData = JsonConvert.SerializeObject(_dataList);
-                                        writer.WriteLine(jsonData);
+                                       
+                                        break;
+                                    }
+
+                                    if (request == "GET_STRINGS")
+                                    {
+                                        lock (_dataLock)
+                                        {
+                                            var jsonData = JsonConvert.SerializeObject(_dataList);
+                                            writer.WriteLine(jsonData);
+                                        }
+                                    }
+                                  
+                                    else if (request == "GET_MESSAGE")
+                                    {
+                                        lock (_dataLock)
+                                        {
+                                            writer.WriteLine(_message);
+                                            _message = null;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine($"Unhandled request: {request}");
+                                        break;
                                     }
                                 }
-                                else
+                                catch (IOException ioEx)
                                 {
-                                    // Handle other requests or exit the loop
+                                    Console.WriteLine($"IO Exception: {ioEx.Message}");
+                                    break;
+                                }
+                                catch (Exception ex)
+                                {
+                                    Console.WriteLine($"Exception: {ex.Message}");
                                     break;
                                 }
                             }
                         }
                     }
                 }
+                catch (IOException ioEx)
+                {
+                    Console.WriteLine($"IO Exception in server loop: {ioEx.Message}");
+                    System.Threading.Thread.Sleep(1000);
+                }
                 catch (Exception ex)
                 {
-                    // Log the exception and continue
-                    Console.WriteLine($"Exception: {ex.Message}");
+                    Console.WriteLine($"Exception in server loop: {ex.Message}");
+                    System.Threading.Thread.Sleep(1000);
                 }
             }
         }
+
+        public void StopServer()
+        {
+            _running = false;
+        }
     }
+
 }

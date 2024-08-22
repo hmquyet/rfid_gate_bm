@@ -33,9 +33,47 @@
             this.lrtxtLog = new CustomControl.LogRichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Maintab = new System.Windows.Forms.TabControl();
+            this.Main_Page2 = new System.Windows.Forms.TabPage();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabPage_answer = new System.Windows.Forms.TabPage();
+            this.chk_phase = new System.Windows.Forms.Panel();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.group_ant1 = new System.Windows.Forms.GroupBox();
+            this.check_ant4 = new System.Windows.Forms.CheckBox();
+            this.check_ant3 = new System.Windows.Forms.CheckBox();
+            this.check_ant2 = new System.Windows.Forms.CheckBox();
+            this.check_ant1 = new System.Windows.Forms.CheckBox();
+            this.lxLedControl6 = new LxControl.LxLedControl();
+            this.label119 = new System.Windows.Forms.Label();
+            this.lxLedControl5 = new LxControl.LxLedControl();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lxLedControl4 = new LxControl.LxLedControl();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lxLedControl3 = new LxControl.LxLedControl();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lxLedControl2 = new LxControl.LxLedControl();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lxLedControl1 = new LxControl.LxLedControl();
+            this.label5 = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rb_epc = new System.Windows.Forms.RadioButton();
+            this.btIventoryG2 = new System.Windows.Forms.Button();
             this.Main_Page1 = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage_Basic = new System.Windows.Forms.TabPage();
+            this.StopPowerAuto = new System.Windows.Forms.Button();
+            this.StartPowerAuto = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btDisConnectMCU = new System.Windows.Forms.Button();
+            this.btConnectMCU = new System.Windows.Forms.Button();
+            this.comboBoxBaud = new System.Windows.Forms.ComboBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.comboBoxPort = new System.Windows.Forms.ComboBox();
+            this.label27 = new System.Windows.Forms.Label();
             this.gbReturnLoss = new System.Windows.Forms.GroupBox();
             this.cbbAnt = new System.Windows.Forms.ComboBox();
             this.label120 = new System.Windows.Forms.Label();
@@ -131,8 +169,6 @@
             this.Radio_beepDis = new System.Windows.Forms.RadioButton();
             this.Radio_beepEn = new System.Windows.Forms.RadioButton();
             this.Button_Beep = new System.Windows.Forms.Button();
-            this.gpb_RDVersion = new System.Windows.Forms.GroupBox();
-            this.text_RDVersion = new System.Windows.Forms.TextBox();
             this.gpb_MDVersion = new System.Windows.Forms.GroupBox();
             this.text_MDVersion = new System.Windows.Forms.TextBox();
             this.btMDVersion = new System.Windows.Forms.Button();
@@ -218,33 +254,6 @@
             this.btGetRfPower = new System.Windows.Forms.Button();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.btSetRfPower = new System.Windows.Forms.Button();
-            this.tabtest_SQL = new System.Windows.Forms.TabPage();
-            this.Main_Page2 = new System.Windows.Forms.TabPage();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.tabPage_answer = new System.Windows.Forms.TabPage();
-            this.chk_phase = new System.Windows.Forms.Panel();
-            this.group_ant1 = new System.Windows.Forms.GroupBox();
-            this.check_ant4 = new System.Windows.Forms.CheckBox();
-            this.check_ant3 = new System.Windows.Forms.CheckBox();
-            this.check_ant2 = new System.Windows.Forms.CheckBox();
-            this.check_ant1 = new System.Windows.Forms.CheckBox();
-            this.lxLedControl6 = new LxControl.LxLedControl();
-            this.label119 = new System.Windows.Forms.Label();
-            this.lxLedControl5 = new LxControl.LxLedControl();
-            this.label9 = new System.Windows.Forms.Label();
-            this.lxLedControl4 = new LxControl.LxLedControl();
-            this.label8 = new System.Windows.Forms.Label();
-            this.lxLedControl3 = new LxControl.LxLedControl();
-            this.label7 = new System.Windows.Forms.Label();
-            this.lxLedControl2 = new LxControl.LxLedControl();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lxLedControl1 = new LxControl.LxLedControl();
-            this.label5 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rb_epc = new System.Windows.Forms.RadioButton();
-            this.btIventoryG2 = new System.Windows.Forms.Button();
             this.btFlashCl = new System.Windows.Forms.Button();
             this.timer_answer = new System.Windows.Forms.Timer(this.components);
             this.timer_runmode = new System.Windows.Forms.Timer(this.components);
@@ -253,12 +262,28 @@
             this.timer_Buff = new System.Windows.Forms.Timer(this.components);
             this.timer_RealTime = new System.Windows.Forms.Timer(this.components);
             this.ckClearOperationRec = new System.Windows.Forms.CheckBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.serialPort2 = new System.IO.Ports.SerialPort(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.Maintab.SuspendLayout();
+            this.Main_Page2.SuspendLayout();
+            this.tabControl2.SuspendLayout();
+            this.tabPage_answer.SuspendLayout();
+            this.chk_phase.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.group_ant1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl1)).BeginInit();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.Main_Page1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage_Basic.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.gbReturnLoss.SuspendLayout();
             this.gbCmdTemperature.SuspendLayout();
             this.gbp_DRM.SuspendLayout();
@@ -275,7 +300,6 @@
             this.gpb_DBM.SuspendLayout();
             this.gpb_Freq.SuspendLayout();
             this.gpb_beep.SuspendLayout();
-            this.gpb_RDVersion.SuspendLayout();
             this.gpb_MDVersion.SuspendLayout();
             this.gpb_Serial.SuspendLayout();
             this.gpb_address.SuspendLayout();
@@ -290,20 +314,6 @@
             this.groupBox45.SuspendLayout();
             this.gbp_MixRead.SuspendLayout();
             this.gbp_PowerAnt.SuspendLayout();
-            this.Main_Page2.SuspendLayout();
-            this.tabControl2.SuspendLayout();
-            this.tabPage_answer.SuspendLayout();
-            this.chk_phase.SuspendLayout();
-            this.group_ant1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl1)).BeginInit();
-            this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lrtxtLog
@@ -327,8 +337,8 @@
             // 
             // Maintab
             // 
-            this.Maintab.Controls.Add(this.Main_Page1);
             this.Maintab.Controls.Add(this.Main_Page2);
+            this.Maintab.Controls.Add(this.Main_Page1);
             this.Maintab.Dock = System.Windows.Forms.DockStyle.Top;
             this.Maintab.ItemSize = new System.Drawing.Size(72, 23);
             this.Maintab.Location = new System.Drawing.Point(0, 0);
@@ -339,6 +349,414 @@
             this.Maintab.TabIndex = 3;
             this.Maintab.SelectedIndexChanged += new System.EventHandler(this.Maintab_SelectedIndexChanged);
             this.Maintab.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.Maintab_Selecting);
+            // 
+            // Main_Page2
+            // 
+            this.Main_Page2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Main_Page2.Controls.Add(this.tabControl2);
+            this.Main_Page2.Location = new System.Drawing.Point(4, 27);
+            this.Main_Page2.Name = "Main_Page2";
+            this.Main_Page2.Padding = new System.Windows.Forms.Padding(3);
+            this.Main_Page2.Size = new System.Drawing.Size(1147, 621);
+            this.Main_Page2.TabIndex = 1;
+            this.Main_Page2.Text = "EPCC1-G2";
+            this.Main_Page2.UseVisualStyleBackColor = true;
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabPage_answer);
+            this.tabControl2.ItemSize = new System.Drawing.Size(120, 23);
+            this.tabControl2.Location = new System.Drawing.Point(-1, 6);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(1131, 612);
+            this.tabControl2.TabIndex = 0;
+            // 
+            // tabPage_answer
+            // 
+            this.tabPage_answer.Controls.Add(this.chk_phase);
+            this.tabPage_answer.Location = new System.Drawing.Point(4, 27);
+            this.tabPage_answer.Name = "tabPage_answer";
+            this.tabPage_answer.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_answer.Size = new System.Drawing.Size(1123, 581);
+            this.tabPage_answer.TabIndex = 0;
+            this.tabPage_answer.Text = "Answer Mode";
+            this.tabPage_answer.UseVisualStyleBackColor = true;
+            // 
+            // chk_phase
+            // 
+            this.chk_phase.Controls.Add(this.groupBox6);
+            this.chk_phase.Controls.Add(this.group_ant1);
+            this.chk_phase.Controls.Add(this.lxLedControl6);
+            this.chk_phase.Controls.Add(this.label119);
+            this.chk_phase.Controls.Add(this.lxLedControl5);
+            this.chk_phase.Controls.Add(this.label9);
+            this.chk_phase.Controls.Add(this.lxLedControl4);
+            this.chk_phase.Controls.Add(this.label8);
+            this.chk_phase.Controls.Add(this.lxLedControl3);
+            this.chk_phase.Controls.Add(this.label7);
+            this.chk_phase.Controls.Add(this.lxLedControl2);
+            this.chk_phase.Controls.Add(this.label6);
+            this.chk_phase.Controls.Add(this.lxLedControl1);
+            this.chk_phase.Controls.Add(this.label5);
+            this.chk_phase.Controls.Add(this.groupBox5);
+            this.chk_phase.Controls.Add(this.groupBox2);
+            this.chk_phase.Enabled = false;
+            this.chk_phase.Location = new System.Drawing.Point(2, 2);
+            this.chk_phase.Name = "chk_phase";
+            this.chk_phase.Size = new System.Drawing.Size(1121, 574);
+            this.chk_phase.TabIndex = 0;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.button4);
+            this.groupBox6.Controls.Add(this.button3);
+            this.groupBox6.Location = new System.Drawing.Point(215, 4);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(258, 74);
+            this.groupBox6.TabIndex = 80;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Select Mode";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(123, 24);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(100, 25);
+            this.button4.TabIndex = 79;
+            this.button4.Text = "manual";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(14, 24);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(100, 25);
+            this.button3.TabIndex = 19;
+            this.button3.Text = "auto";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
+            // group_ant1
+            // 
+            this.group_ant1.Controls.Add(this.check_ant4);
+            this.group_ant1.Controls.Add(this.check_ant3);
+            this.group_ant1.Controls.Add(this.check_ant2);
+            this.group_ant1.Controls.Add(this.check_ant1);
+            this.group_ant1.Location = new System.Drawing.Point(8, 84);
+            this.group_ant1.Name = "group_ant1";
+            this.group_ant1.Size = new System.Drawing.Size(89, 478);
+            this.group_ant1.TabIndex = 44;
+            this.group_ant1.TabStop = false;
+            this.group_ant1.Text = "Antenna";
+            // 
+            // check_ant4
+            // 
+            this.check_ant4.AutoSize = true;
+            this.check_ant4.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.check_ant4.Location = new System.Drawing.Point(16, 88);
+            this.check_ant4.Name = "check_ant4";
+            this.check_ant4.Size = new System.Drawing.Size(54, 17);
+            this.check_ant4.TabIndex = 37;
+            this.check_ant4.Text = "ANT4";
+            this.check_ant4.UseVisualStyleBackColor = true;
+            // 
+            // check_ant3
+            // 
+            this.check_ant3.AutoSize = true;
+            this.check_ant3.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.check_ant3.Location = new System.Drawing.Point(16, 66);
+            this.check_ant3.Name = "check_ant3";
+            this.check_ant3.Size = new System.Drawing.Size(54, 17);
+            this.check_ant3.TabIndex = 36;
+            this.check_ant3.Text = "ANT3";
+            this.check_ant3.UseVisualStyleBackColor = true;
+            // 
+            // check_ant2
+            // 
+            this.check_ant2.AutoSize = true;
+            this.check_ant2.Checked = true;
+            this.check_ant2.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.check_ant2.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.check_ant2.Location = new System.Drawing.Point(16, 42);
+            this.check_ant2.Name = "check_ant2";
+            this.check_ant2.Size = new System.Drawing.Size(54, 17);
+            this.check_ant2.TabIndex = 35;
+            this.check_ant2.Text = "ANT2";
+            this.check_ant2.UseVisualStyleBackColor = true;
+            // 
+            // check_ant1
+            // 
+            this.check_ant1.AutoSize = true;
+            this.check_ant1.Checked = true;
+            this.check_ant1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.check_ant1.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.check_ant1.Location = new System.Drawing.Point(16, 20);
+            this.check_ant1.Name = "check_ant1";
+            this.check_ant1.Size = new System.Drawing.Size(54, 17);
+            this.check_ant1.TabIndex = 34;
+            this.check_ant1.Text = "ANT1";
+            this.check_ant1.UseVisualStyleBackColor = true;
+            // 
+            // lxLedControl6
+            // 
+            this.lxLedControl6.BackColor = System.Drawing.Color.Transparent;
+            this.lxLedControl6.BackColor_1 = System.Drawing.Color.Transparent;
+            this.lxLedControl6.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.lxLedControl6.BevelRate = 0.5F;
+            this.lxLedControl6.BorderColor = System.Drawing.Color.Lavender;
+            this.lxLedControl6.BorderWidth = 3;
+            this.lxLedControl6.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.lxLedControl6.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.lxLedControl6.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.lxLedControl6.HighlightOpaque = ((byte)(50));
+            this.lxLedControl6.Location = new System.Drawing.Point(805, 241);
+            this.lxLedControl6.Name = "lxLedControl6";
+            this.lxLedControl6.RoundCorner = true;
+            this.lxLedControl6.ShowHighlight = true;
+            this.lxLedControl6.Size = new System.Drawing.Size(277, 88);
+            this.lxLedControl6.TabIndex = 43;
+            this.lxLedControl6.Text = "0";
+            this.lxLedControl6.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            this.lxLedControl6.TotalCharCount = 6;
+            // 
+            // label119
+            // 
+            this.label119.AutoSize = true;
+            this.label119.Location = new System.Drawing.Point(807, 221);
+            this.label119.Name = "label119";
+            this.label119.Size = new System.Drawing.Size(68, 13);
+            this.label119.TabIndex = 42;
+            this.label119.Text = "TID Number:";
+            // 
+            // lxLedControl5
+            // 
+            this.lxLedControl5.BackColor = System.Drawing.Color.Transparent;
+            this.lxLedControl5.BackColor_1 = System.Drawing.Color.Transparent;
+            this.lxLedControl5.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.lxLedControl5.BevelRate = 0.5F;
+            this.lxLedControl5.BorderColor = System.Drawing.Color.Lavender;
+            this.lxLedControl5.BorderWidth = 3;
+            this.lxLedControl5.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.lxLedControl5.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.lxLedControl5.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.lxLedControl5.HighlightOpaque = ((byte)(50));
+            this.lxLedControl5.Location = new System.Drawing.Point(944, 481);
+            this.lxLedControl5.Name = "lxLedControl5";
+            this.lxLedControl5.RoundCorner = true;
+            this.lxLedControl5.ShowHighlight = true;
+            this.lxLedControl5.Size = new System.Drawing.Size(126, 30);
+            this.lxLedControl5.TabIndex = 41;
+            this.lxLedControl5.Text = "0";
+            this.lxLedControl5.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            this.lxLedControl5.TotalCharCount = 7;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label9.Location = new System.Drawing.Point(942, 459);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(98, 13);
+            this.label9.TabIndex = 40;
+            this.label9.Text = "Total-cmd-time(ms):";
+            // 
+            // lxLedControl4
+            // 
+            this.lxLedControl4.BackColor = System.Drawing.Color.Transparent;
+            this.lxLedControl4.BackColor_1 = System.Drawing.Color.Transparent;
+            this.lxLedControl4.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.lxLedControl4.BevelRate = 0.5F;
+            this.lxLedControl4.BorderColor = System.Drawing.Color.Lavender;
+            this.lxLedControl4.BorderWidth = 3;
+            this.lxLedControl4.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.lxLedControl4.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.lxLedControl4.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.lxLedControl4.HighlightOpaque = ((byte)(50));
+            this.lxLedControl4.Location = new System.Drawing.Point(800, 480);
+            this.lxLedControl4.Name = "lxLedControl4";
+            this.lxLedControl4.RoundCorner = true;
+            this.lxLedControl4.ShowHighlight = true;
+            this.lxLedControl4.Size = new System.Drawing.Size(126, 32);
+            this.lxLedControl4.TabIndex = 39;
+            this.lxLedControl4.Text = "0";
+            this.lxLedControl4.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            this.lxLedControl4.TotalCharCount = 7;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label8.Location = new System.Drawing.Point(798, 459);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(90, 13);
+            this.label8.TabIndex = 38;
+            this.label8.Text = "Total tag number:";
+            // 
+            // lxLedControl3
+            // 
+            this.lxLedControl3.BackColor = System.Drawing.Color.Transparent;
+            this.lxLedControl3.BackColor_1 = System.Drawing.Color.Transparent;
+            this.lxLedControl3.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.lxLedControl3.BevelRate = 0.5F;
+            this.lxLedControl3.BorderColor = System.Drawing.Color.Lavender;
+            this.lxLedControl3.BorderWidth = 3;
+            this.lxLedControl3.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.lxLedControl3.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.lxLedControl3.ForeColor = System.Drawing.Color.Purple;
+            this.lxLedControl3.HighlightOpaque = ((byte)(50));
+            this.lxLedControl3.Location = new System.Drawing.Point(944, 392);
+            this.lxLedControl3.Name = "lxLedControl3";
+            this.lxLedControl3.RoundCorner = true;
+            this.lxLedControl3.ShowHighlight = true;
+            this.lxLedControl3.Size = new System.Drawing.Size(126, 32);
+            this.lxLedControl3.TabIndex = 37;
+            this.lxLedControl3.Text = "0";
+            this.lxLedControl3.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            this.lxLedControl3.TotalCharCount = 7;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label7.Location = new System.Drawing.Point(942, 366);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(71, 13);
+            this.label7.TabIndex = 36;
+            this.label7.Text = "cmd time(ms):";
+            // 
+            // lxLedControl2
+            // 
+            this.lxLedControl2.BackColor = System.Drawing.Color.Transparent;
+            this.lxLedControl2.BackColor_1 = System.Drawing.Color.Transparent;
+            this.lxLedControl2.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.lxLedControl2.BevelRate = 0.5F;
+            this.lxLedControl2.BorderColor = System.Drawing.Color.Lavender;
+            this.lxLedControl2.BorderWidth = 3;
+            this.lxLedControl2.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.lxLedControl2.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.lxLedControl2.ForeColor = System.Drawing.Color.Purple;
+            this.lxLedControl2.HighlightOpaque = ((byte)(50));
+            this.lxLedControl2.Location = new System.Drawing.Point(800, 392);
+            this.lxLedControl2.Name = "lxLedControl2";
+            this.lxLedControl2.RoundCorner = true;
+            this.lxLedControl2.ShowHighlight = true;
+            this.lxLedControl2.Size = new System.Drawing.Size(126, 32);
+            this.lxLedControl2.TabIndex = 35;
+            this.lxLedControl2.Text = "0";
+            this.lxLedControl2.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            this.lxLedControl2.TotalCharCount = 7;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label6.Location = new System.Drawing.Point(798, 366);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(41, 13);
+            this.label6.TabIndex = 34;
+            this.label6.Text = "Speed:";
+            // 
+            // lxLedControl1
+            // 
+            this.lxLedControl1.BackColor = System.Drawing.Color.Transparent;
+            this.lxLedControl1.BackColor_1 = System.Drawing.Color.Transparent;
+            this.lxLedControl1.BackColor_2 = System.Drawing.Color.DarkRed;
+            this.lxLedControl1.BevelRate = 0.5F;
+            this.lxLedControl1.BorderColor = System.Drawing.Color.Lavender;
+            this.lxLedControl1.BorderWidth = 3;
+            this.lxLedControl1.FadedColor = System.Drawing.SystemColors.ControlLight;
+            this.lxLedControl1.FocusedBorderColor = System.Drawing.Color.LightCoral;
+            this.lxLedControl1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.lxLedControl1.HighlightOpaque = ((byte)(50));
+            this.lxLedControl1.Location = new System.Drawing.Point(805, 114);
+            this.lxLedControl1.Name = "lxLedControl1";
+            this.lxLedControl1.RoundCorner = true;
+            this.lxLedControl1.ShowHighlight = true;
+            this.lxLedControl1.Size = new System.Drawing.Size(277, 88);
+            this.lxLedControl1.TabIndex = 33;
+            this.lxLedControl1.Text = "0";
+            this.lxLedControl1.TextAlignment = LxControl.LxLedControl.Alignment.Right;
+            this.lxLedControl1.TotalCharCount = 6;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(807, 93);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(71, 13);
+            this.label5.TabIndex = 32;
+            this.label5.Text = "EPC Number:";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.dataGridView1);
+            this.groupBox5.Location = new System.Drawing.Point(100, 85);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(704, 482);
+            this.groupBox5.TabIndex = 18;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Tag list(No Repeat)";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(5, 22);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 23;
+            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(691, 456);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.rb_epc);
+            this.groupBox2.Controls.Add(this.btIventoryG2);
+            this.groupBox2.Location = new System.Drawing.Point(5, 1);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(195, 77);
+            this.groupBox2.TabIndex = 15;
+            this.groupBox2.TabStop = false;
+            // 
+            // rb_epc
+            // 
+            this.rb_epc.AutoSize = true;
+            this.rb_epc.Checked = true;
+            this.rb_epc.Location = new System.Drawing.Point(120, 37);
+            this.rb_epc.Name = "rb_epc";
+            this.rb_epc.Size = new System.Drawing.Size(46, 17);
+            this.rb_epc.TabIndex = 1;
+            this.rb_epc.TabStop = true;
+            this.rb_epc.Text = "EPC";
+            this.rb_epc.UseVisualStyleBackColor = true;
+            this.rb_epc.CheckedChanged += new System.EventHandler(this.rb_epc_CheckedChanged);
+            // 
+            // btIventoryG2
+            // 
+            this.btIventoryG2.BackColor = System.Drawing.Color.Transparent;
+            this.btIventoryG2.Font = new System.Drawing.Font("SimSun", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btIventoryG2.ForeColor = System.Drawing.Color.DarkBlue;
+            this.btIventoryG2.Location = new System.Drawing.Point(6, 22);
+            this.btIventoryG2.Name = "btIventoryG2";
+            this.btIventoryG2.Size = new System.Drawing.Size(109, 43);
+            this.btIventoryG2.TabIndex = 0;
+            this.btIventoryG2.Text = "Start";
+            this.btIventoryG2.UseVisualStyleBackColor = false;
+            this.btIventoryG2.Click += new System.EventHandler(this.btIventoryG2_Click);
             // 
             // Main_Page1
             // 
@@ -357,7 +775,6 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage_Basic);
             this.tabControl1.Controls.Add(this.tabPage15);
-            this.tabControl1.Controls.Add(this.tabtest_SQL);
             this.tabControl1.HotTrack = true;
             this.tabControl1.ItemSize = new System.Drawing.Size(84, 23);
             this.tabControl1.Location = new System.Drawing.Point(1, 4);
@@ -369,6 +786,9 @@
             // 
             // tabPage_Basic
             // 
+            this.tabPage_Basic.Controls.Add(this.StopPowerAuto);
+            this.tabPage_Basic.Controls.Add(this.StartPowerAuto);
+            this.tabPage_Basic.Controls.Add(this.groupBox3);
             this.tabPage_Basic.Controls.Add(this.gbReturnLoss);
             this.tabPage_Basic.Controls.Add(this.gbCmdTemperature);
             this.tabPage_Basic.Controls.Add(this.gbp_DRM);
@@ -387,7 +807,6 @@
             this.tabPage_Basic.Controls.Add(this.gpb_DBM);
             this.tabPage_Basic.Controls.Add(this.gpb_Freq);
             this.tabPage_Basic.Controls.Add(this.gpb_beep);
-            this.tabPage_Basic.Controls.Add(this.gpb_RDVersion);
             this.tabPage_Basic.Controls.Add(this.gpb_MDVersion);
             this.tabPage_Basic.Controls.Add(this.gpb_Serial);
             this.tabPage_Basic.Controls.Add(this.gpb_address);
@@ -401,6 +820,125 @@
             this.tabPage_Basic.Text = "Basic";
             this.tabPage_Basic.UseVisualStyleBackColor = true;
             // 
+            // StopPowerAuto
+            // 
+            this.StopPowerAuto.Location = new System.Drawing.Point(766, 543);
+            this.StopPowerAuto.Name = "StopPowerAuto";
+            this.StopPowerAuto.Size = new System.Drawing.Size(108, 35);
+            this.StopPowerAuto.TabIndex = 79;
+            this.StopPowerAuto.Text = "Stop power auto";
+            this.StopPowerAuto.UseVisualStyleBackColor = true;
+            this.StopPowerAuto.Click += new System.EventHandler(this.StopPowerAuto_Click);
+            // 
+            // StartPowerAuto
+            // 
+            this.StartPowerAuto.Location = new System.Drawing.Point(650, 543);
+            this.StartPowerAuto.Name = "StartPowerAuto";
+            this.StartPowerAuto.Size = new System.Drawing.Size(100, 35);
+            this.StartPowerAuto.TabIndex = 26;
+            this.StartPowerAuto.Text = "Start power auto";
+            this.StartPowerAuto.UseVisualStyleBackColor = true;
+            this.StartPowerAuto.Click += new System.EventHandler(this.setPowerAuto_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btDisConnectMCU);
+            this.groupBox3.Controls.Add(this.btConnectMCU);
+            this.groupBox3.Controls.Add(this.comboBoxBaud);
+            this.groupBox3.Controls.Add(this.label26);
+            this.groupBox3.Controls.Add(this.comboBoxPort);
+            this.groupBox3.Controls.Add(this.label27);
+            this.groupBox3.Location = new System.Drawing.Point(360, 55);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(342, 76);
+            this.groupBox3.TabIndex = 78;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Serial STM32";
+            // 
+            // btDisConnectMCU
+            // 
+            this.btDisConnectMCU.Enabled = false;
+            this.btDisConnectMCU.Location = new System.Drawing.Point(242, 43);
+            this.btDisConnectMCU.Name = "btDisConnectMCU";
+            this.btDisConnectMCU.Size = new System.Drawing.Size(90, 25);
+            this.btDisConnectMCU.TabIndex = 20;
+            this.btDisConnectMCU.Text = "Disconnect";
+            this.btDisConnectMCU.UseVisualStyleBackColor = true;
+            this.btDisConnectMCU.Click += new System.EventHandler(this.btDisConnectMCU_Click);
+            // 
+            // btConnectMCU
+            // 
+            this.btConnectMCU.Location = new System.Drawing.Point(242, 12);
+            this.btConnectMCU.Name = "btConnectMCU";
+            this.btConnectMCU.Size = new System.Drawing.Size(90, 25);
+            this.btConnectMCU.TabIndex = 19;
+            this.btConnectMCU.Text = "Connect";
+            this.btConnectMCU.UseVisualStyleBackColor = true;
+            this.btConnectMCU.Click += new System.EventHandler(this.btConnectMCU_Click);
+            // 
+            // comboBoxBaud
+            // 
+            this.comboBoxBaud.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxBaud.FormattingEnabled = true;
+            this.comboBoxBaud.Items.AddRange(new object[] {
+            "9600",
+            "19200",
+            "38400",
+            "57600",
+            "115200"});
+            this.comboBoxBaud.Location = new System.Drawing.Point(97, 45);
+            this.comboBoxBaud.Name = "comboBoxBaud";
+            this.comboBoxBaud.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxBaud.TabIndex = 18;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(22, 51);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(56, 13);
+            this.label26.TabIndex = 17;
+            this.label26.Text = "Baud rate:";
+            // 
+            // comboBoxPort
+            // 
+            this.comboBoxPort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxPort.FormattingEnabled = true;
+            this.comboBoxPort.Items.AddRange(new object[] {
+            "COM1",
+            "COM2",
+            "COM3",
+            "COM4",
+            "COM5",
+            "COM6",
+            "COM7",
+            "COM8",
+            "COM9",
+            "COM10",
+            "COM11",
+            "COM12",
+            "COM13",
+            "COM14",
+            "COM15",
+            "COM16",
+            "COM17",
+            "COM18",
+            "COM19",
+            "COM20"});
+            this.comboBoxPort.Location = new System.Drawing.Point(96, 16);
+            this.comboBoxPort.Name = "comboBoxPort";
+            this.comboBoxPort.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxPort.TabIndex = 14;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(21, 26);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(58, 13);
+            this.label27.TabIndex = 13;
+            this.label27.Text = "Serial Port:";
+            // 
             // gbReturnLoss
             // 
             this.gbReturnLoss.BackColor = System.Drawing.Color.Transparent;
@@ -412,7 +950,7 @@
             this.gbReturnLoss.Controls.Add(this.textReturnLoss);
             this.gbReturnLoss.Controls.Add(this.btReturnLoss);
             this.gbReturnLoss.ForeColor = System.Drawing.Color.Black;
-            this.gbReturnLoss.Location = new System.Drawing.Point(354, 288);
+            this.gbReturnLoss.Location = new System.Drawing.Point(354, 413);
             this.gbReturnLoss.Name = "gbReturnLoss";
             this.gbReturnLoss.Size = new System.Drawing.Size(341, 50);
             this.gbReturnLoss.TabIndex = 77;
@@ -493,16 +1031,16 @@
             this.gbCmdTemperature.Controls.Add(this.btnGetReaderTemperature);
             this.gbCmdTemperature.Controls.Add(this.txtReaderTemperature);
             this.gbCmdTemperature.ForeColor = System.Drawing.Color.Black;
-            this.gbCmdTemperature.Location = new System.Drawing.Point(702, 286);
+            this.gbCmdTemperature.Location = new System.Drawing.Point(360, 6);
             this.gbCmdTemperature.Name = "gbCmdTemperature";
-            this.gbCmdTemperature.Size = new System.Drawing.Size(342, 53);
+            this.gbCmdTemperature.Size = new System.Drawing.Size(342, 48);
             this.gbCmdTemperature.TabIndex = 76;
             this.gbCmdTemperature.TabStop = false;
             this.gbCmdTemperature.Text = "Working temperature monitoring";
             // 
             // btnGetReaderTemperature
             // 
-            this.btnGetReaderTemperature.Location = new System.Drawing.Point(233, 20);
+            this.btnGetReaderTemperature.Location = new System.Drawing.Point(233, 14);
             this.btnGetReaderTemperature.Name = "btnGetReaderTemperature";
             this.btnGetReaderTemperature.Size = new System.Drawing.Size(90, 25);
             this.btnGetReaderTemperature.TabIndex = 0;
@@ -525,9 +1063,9 @@
             this.gbp_DRM.Controls.Add(this.DRM_OPEN);
             this.gbp_DRM.Controls.Add(this.bt_GetDRM);
             this.gbp_DRM.Controls.Add(this.bt_setDRM);
-            this.gbp_DRM.Location = new System.Drawing.Point(702, 408);
+            this.gbp_DRM.Location = new System.Drawing.Point(706, 468);
             this.gbp_DRM.Name = "gbp_DRM";
-            this.gbp_DRM.Size = new System.Drawing.Size(343, 55);
+            this.gbp_DRM.Size = new System.Drawing.Size(338, 66);
             this.gbp_DRM.TabIndex = 75;
             this.gbp_DRM.TabStop = false;
             this.gbp_DRM.Text = "DRM";
@@ -577,7 +1115,7 @@
             this.gbp_Retry.Controls.Add(this.com_retrytimes);
             this.gbp_Retry.Controls.Add(this.bt_Getretry);
             this.gbp_Retry.Controls.Add(this.bt_Setretry);
-            this.gbp_Retry.Location = new System.Drawing.Point(702, 350);
+            this.gbp_Retry.Location = new System.Drawing.Point(702, 413);
             this.gbp_Retry.Name = "gbp_Retry";
             this.gbp_Retry.Size = new System.Drawing.Size(343, 52);
             this.gbp_Retry.TabIndex = 74;
@@ -819,9 +1357,9 @@
             // 
             // btDefault
             // 
-            this.btDefault.Location = new System.Drawing.Point(915, 529);
+            this.btDefault.Location = new System.Drawing.Point(934, 540);
             this.btDefault.Name = "btDefault";
-            this.btDefault.Size = new System.Drawing.Size(130, 46);
+            this.btDefault.Size = new System.Drawing.Size(111, 38);
             this.btDefault.TabIndex = 57;
             this.btDefault.Text = "Default setting";
             this.btDefault.UseVisualStyleBackColor = true;
@@ -845,7 +1383,7 @@
             this.gpb_antconfig.Controls.Add(this.checkant3);
             this.gpb_antconfig.Controls.Add(this.checkant2);
             this.gpb_antconfig.Controls.Add(this.checkant1);
-            this.gpb_antconfig.Location = new System.Drawing.Point(357, 401);
+            this.gpb_antconfig.Location = new System.Drawing.Point(7, 470);
             this.gpb_antconfig.Name = "gpb_antconfig";
             this.gpb_antconfig.Size = new System.Drawing.Size(342, 63);
             this.gpb_antconfig.TabIndex = 54;
@@ -919,9 +1457,9 @@
             this.gpb_checkant.Controls.Add(this.btSetcheckant);
             this.gpb_checkant.Controls.Add(this.rb_Closecheckant);
             this.gpb_checkant.Controls.Add(this.rb_Opencheckant);
-            this.gpb_checkant.Location = new System.Drawing.Point(354, 347);
+            this.gpb_checkant.Location = new System.Drawing.Point(353, 468);
             this.gpb_checkant.Name = "gpb_checkant";
-            this.gpb_checkant.Size = new System.Drawing.Size(342, 55);
+            this.gpb_checkant.Size = new System.Drawing.Size(342, 65);
             this.gpb_checkant.TabIndex = 53;
             this.gpb_checkant.TabStop = false;
             this.gpb_checkant.Text = "Antenna checked";
@@ -970,9 +1508,9 @@
             this.gpb_GPIO.Controls.Add(this.check_out3);
             this.gpb_GPIO.Controls.Add(this.check_out2);
             this.gpb_GPIO.Controls.Add(this.check_out1);
-            this.gpb_GPIO.Location = new System.Drawing.Point(361, 237);
+            this.gpb_GPIO.Location = new System.Drawing.Point(353, 362);
             this.gpb_GPIO.Name = "gpb_GPIO";
-            this.gpb_GPIO.Size = new System.Drawing.Size(686, 46);
+            this.gpb_GPIO.Size = new System.Drawing.Size(696, 46);
             this.gpb_GPIO.TabIndex = 49;
             this.gpb_GPIO.TabStop = false;
             this.gpb_GPIO.Text = "GPIO Operation";
@@ -1089,9 +1627,9 @@
             this.gpb_OutputRep.Controls.Add(this.check_OutputRep3);
             this.gpb_OutputRep.Controls.Add(this.check_OutputRep2);
             this.gpb_OutputRep.Controls.Add(this.check_OutputRep1);
-            this.gpb_OutputRep.Location = new System.Drawing.Point(705, 189);
+            this.gpb_OutputRep.Location = new System.Drawing.Point(700, 139);
             this.gpb_OutputRep.Name = "gpb_OutputRep";
-            this.gpb_OutputRep.Size = new System.Drawing.Size(342, 46);
+            this.gpb_OutputRep.Size = new System.Drawing.Size(349, 46);
             this.gpb_OutputRep.TabIndex = 48;
             this.gpb_OutputRep.TabStop = false;
             this.gpb_OutputRep.Text = "Set notification pluse output";
@@ -1152,9 +1690,9 @@
             this.gpb_Relay.Controls.Add(this.ComboBox_RelayTime);
             this.gpb_Relay.Controls.Add(this.label37);
             this.gpb_Relay.Controls.Add(this.btRelay);
-            this.gpb_Relay.Location = new System.Drawing.Point(357, 189);
+            this.gpb_Relay.Location = new System.Drawing.Point(355, 137);
             this.gpb_Relay.Name = "gpb_Relay";
-            this.gpb_Relay.Size = new System.Drawing.Size(342, 46);
+            this.gpb_Relay.Size = new System.Drawing.Size(342, 101);
             this.gpb_Relay.TabIndex = 31;
             this.gpb_Relay.TabStop = false;
             this.gpb_Relay.Text = "Relay control";
@@ -1162,7 +1700,7 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(182, 20);
+            this.label38.Location = new System.Drawing.Point(180, 48);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(36, 13);
             this.label38.TabIndex = 26;
@@ -1172,7 +1710,7 @@
             // 
             this.ComboBox_RelayTime.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBox_RelayTime.FormattingEnabled = true;
-            this.ComboBox_RelayTime.Location = new System.Drawing.Point(82, 16);
+            this.ComboBox_RelayTime.Location = new System.Drawing.Point(80, 44);
             this.ComboBox_RelayTime.Name = "ComboBox_RelayTime";
             this.ComboBox_RelayTime.Size = new System.Drawing.Size(96, 21);
             this.ComboBox_RelayTime.TabIndex = 25;
@@ -1180,7 +1718,7 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(17, 20);
+            this.label37.Location = new System.Drawing.Point(15, 48);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(71, 13);
             this.label37.TabIndex = 24;
@@ -1188,7 +1726,7 @@
             // 
             // btRelay
             // 
-            this.btRelay.Location = new System.Drawing.Point(233, 14);
+            this.btRelay.Location = new System.Drawing.Point(231, 42);
             this.btRelay.Name = "btRelay";
             this.btRelay.Size = new System.Drawing.Size(90, 25);
             this.btRelay.TabIndex = 23;
@@ -1200,9 +1738,9 @@
             // 
             this.gpb_baud.Controls.Add(this.ComboBox_baud);
             this.gpb_baud.Controls.Add(this.btBaudRate);
-            this.gpb_baud.Location = new System.Drawing.Point(707, 135);
+            this.gpb_baud.Location = new System.Drawing.Point(700, 191);
             this.gpb_baud.Name = "gpb_baud";
-            this.gpb_baud.Size = new System.Drawing.Size(342, 49);
+            this.gpb_baud.Size = new System.Drawing.Size(350, 49);
             this.gpb_baud.TabIndex = 30;
             this.gpb_baud.TabStop = false;
             this.gpb_baud.Text = "RS232/485 baud rate";
@@ -1237,9 +1775,9 @@
             this.gpb_DBM.Controls.Add(this.label10);
             this.gpb_DBM.Controls.Add(this.ComboBox_PowerDbm);
             this.gpb_DBM.Controls.Add(this.BT_DBM);
-            this.gpb_DBM.Location = new System.Drawing.Point(355, 136);
+            this.gpb_DBM.Location = new System.Drawing.Point(708, 60);
             this.gpb_DBM.Name = "gpb_DBM";
-            this.gpb_DBM.Size = new System.Drawing.Size(342, 48);
+            this.gpb_DBM.Size = new System.Drawing.Size(342, 71);
             this.gpb_DBM.TabIndex = 29;
             this.gpb_DBM.TabStop = false;
             this.gpb_DBM.Text = "Power";
@@ -1247,7 +1785,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(157, 25);
+            this.label10.Location = new System.Drawing.Point(150, 32);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(28, 13);
             this.label10.TabIndex = 25;
@@ -1295,14 +1833,14 @@
             "34",
             "35",
             "36"});
-            this.ComboBox_PowerDbm.Location = new System.Drawing.Point(51, 22);
+            this.ComboBox_PowerDbm.Location = new System.Drawing.Point(44, 29);
             this.ComboBox_PowerDbm.Name = "ComboBox_PowerDbm";
             this.ComboBox_PowerDbm.Size = new System.Drawing.Size(100, 21);
             this.ComboBox_PowerDbm.TabIndex = 24;
             // 
             // BT_DBM
             // 
-            this.BT_DBM.Location = new System.Drawing.Point(233, 17);
+            this.BT_DBM.Location = new System.Drawing.Point(232, 25);
             this.BT_DBM.Name = "BT_DBM";
             this.BT_DBM.Size = new System.Drawing.Size(90, 25);
             this.BT_DBM.TabIndex = 23;
@@ -1325,9 +1863,9 @@
             this.gpb_Freq.Controls.Add(this.label15);
             this.gpb_Freq.Controls.Add(this.ComboBox_dminfre);
             this.gpb_Freq.Controls.Add(this.label14);
-            this.gpb_Freq.Location = new System.Drawing.Point(354, 60);
+            this.gpb_Freq.Location = new System.Drawing.Point(353, 246);
             this.gpb_Freq.Name = "gpb_Freq";
-            this.gpb_Freq.Size = new System.Drawing.Size(695, 76);
+            this.gpb_Freq.Size = new System.Drawing.Size(696, 113);
             this.gpb_Freq.TabIndex = 28;
             this.gpb_Freq.TabStop = false;
             this.gpb_Freq.Text = "Region";
@@ -1335,7 +1873,7 @@
             // radioButton_band0
             // 
             this.radioButton_band0.AutoSize = true;
-            this.radioButton_band0.Location = new System.Drawing.Point(249, 48);
+            this.radioButton_band0.Location = new System.Drawing.Point(249, 79);
             this.radioButton_band0.Name = "radioButton_band0";
             this.radioButton_band0.Size = new System.Drawing.Size(71, 17);
             this.radioButton_band0.TabIndex = 21;
@@ -1347,7 +1885,7 @@
             // radioButton_band12
             // 
             this.radioButton_band12.AutoSize = true;
-            this.radioButton_band12.Location = new System.Drawing.Point(172, 48);
+            this.radioButton_band12.Location = new System.Drawing.Point(172, 79);
             this.radioButton_band12.Name = "radioButton_band12";
             this.radioButton_band12.Size = new System.Drawing.Size(73, 17);
             this.radioButton_band12.TabIndex = 18;
@@ -1359,7 +1897,7 @@
             // radioButton_band8
             // 
             this.radioButton_band8.AutoSize = true;
-            this.radioButton_band8.Location = new System.Drawing.Point(10, 19);
+            this.radioButton_band8.Location = new System.Drawing.Point(10, 36);
             this.radioButton_band8.Name = "radioButton_band8";
             this.radioButton_band8.Size = new System.Drawing.Size(96, 17);
             this.radioButton_band8.TabIndex = 17;
@@ -1371,7 +1909,7 @@
             // CheckBox_SameFre
             // 
             this.CheckBox_SameFre.AutoSize = true;
-            this.CheckBox_SameFre.Location = new System.Drawing.Point(585, 17);
+            this.CheckBox_SameFre.Location = new System.Drawing.Point(585, 34);
             this.CheckBox_SameFre.Name = "CheckBox_SameFre";
             this.CheckBox_SameFre.Size = new System.Drawing.Size(55, 17);
             this.CheckBox_SameFre.TabIndex = 16;
@@ -1382,7 +1920,7 @@
             // radioButton_band4
             // 
             this.radioButton_band4.AutoSize = true;
-            this.radioButton_band4.Location = new System.Drawing.Point(103, 48);
+            this.radioButton_band4.Location = new System.Drawing.Point(103, 79);
             this.radioButton_band4.Name = "radioButton_band4";
             this.radioButton_band4.Size = new System.Drawing.Size(67, 17);
             this.radioButton_band4.TabIndex = 15;
@@ -1394,7 +1932,7 @@
             // radioButton_band3
             // 
             this.radioButton_band3.AutoSize = true;
-            this.radioButton_band3.Location = new System.Drawing.Point(10, 48);
+            this.radioButton_band3.Location = new System.Drawing.Point(10, 79);
             this.radioButton_band3.Name = "radioButton_band3";
             this.radioButton_band3.Size = new System.Drawing.Size(86, 17);
             this.radioButton_band3.TabIndex = 14;
@@ -1406,7 +1944,7 @@
             // radioButton_band2
             // 
             this.radioButton_band2.AutoSize = true;
-            this.radioButton_band2.Location = new System.Drawing.Point(247, 17);
+            this.radioButton_band2.Location = new System.Drawing.Point(247, 34);
             this.radioButton_band2.Name = "radioButton_band2";
             this.radioButton_band2.Size = new System.Drawing.Size(67, 17);
             this.radioButton_band2.TabIndex = 13;
@@ -1418,7 +1956,7 @@
             // radioButton_band1
             // 
             this.radioButton_band1.AutoSize = true;
-            this.radioButton_band1.Location = new System.Drawing.Point(127, 19);
+            this.radioButton_band1.Location = new System.Drawing.Point(127, 36);
             this.radioButton_band1.Name = "radioButton_band1";
             this.radioButton_band1.Size = new System.Drawing.Size(96, 17);
             this.radioButton_band1.TabIndex = 12;
@@ -1429,7 +1967,7 @@
             // 
             // btFreq
             // 
-            this.btFreq.Location = new System.Drawing.Point(585, 40);
+            this.btFreq.Location = new System.Drawing.Point(585, 71);
             this.btFreq.Name = "btFreq";
             this.btFreq.Size = new System.Drawing.Size(90, 25);
             this.btFreq.TabIndex = 11;
@@ -1441,7 +1979,7 @@
             // 
             this.ComboBox_dmaxfre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBox_dmaxfre.FormattingEnabled = true;
-            this.ComboBox_dmaxfre.Location = new System.Drawing.Point(421, 46);
+            this.ComboBox_dmaxfre.Location = new System.Drawing.Point(421, 77);
             this.ComboBox_dmaxfre.Name = "ComboBox_dmaxfre";
             this.ComboBox_dmaxfre.Size = new System.Drawing.Size(100, 21);
             this.ComboBox_dmaxfre.TabIndex = 10;
@@ -1449,7 +1987,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(332, 50);
+            this.label15.Location = new System.Drawing.Point(332, 81);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(42, 13);
             this.label15.TabIndex = 9;
@@ -1459,7 +1997,7 @@
             // 
             this.ComboBox_dminfre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBox_dminfre.FormattingEnabled = true;
-            this.ComboBox_dminfre.Location = new System.Drawing.Point(421, 14);
+            this.ComboBox_dminfre.Location = new System.Drawing.Point(421, 31);
             this.ComboBox_dminfre.Name = "ComboBox_dminfre";
             this.ComboBox_dminfre.Size = new System.Drawing.Size(100, 21);
             this.ComboBox_dminfre.TabIndex = 8;
@@ -1467,7 +2005,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(332, 19);
+            this.label14.Location = new System.Drawing.Point(332, 36);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(39, 13);
             this.label14.TabIndex = 7;
@@ -1516,25 +2054,6 @@
             this.Button_Beep.Text = "Set";
             this.Button_Beep.UseVisualStyleBackColor = true;
             this.Button_Beep.Click += new System.EventHandler(this.Button_Beep_Click);
-            // 
-            // gpb_RDVersion
-            // 
-            this.gpb_RDVersion.Controls.Add(this.text_RDVersion);
-            this.gpb_RDVersion.Location = new System.Drawing.Point(354, 6);
-            this.gpb_RDVersion.Name = "gpb_RDVersion";
-            this.gpb_RDVersion.Size = new System.Drawing.Size(342, 48);
-            this.gpb_RDVersion.TabIndex = 26;
-            this.gpb_RDVersion.TabStop = false;
-            this.gpb_RDVersion.Text = "Firmware version";
-            // 
-            // text_RDVersion
-            // 
-            this.text_RDVersion.Location = new System.Drawing.Point(95, 16);
-            this.text_RDVersion.MaxLength = 2;
-            this.text_RDVersion.Name = "text_RDVersion";
-            this.text_RDVersion.ReadOnly = true;
-            this.text_RDVersion.Size = new System.Drawing.Size(160, 20);
-            this.text_RDVersion.TabIndex = 24;
             // 
             // gpb_MDVersion
             // 
@@ -1609,7 +2128,7 @@
             // 
             // text_address
             // 
-            this.text_address.Location = new System.Drawing.Point(95, 15);
+            this.text_address.Location = new System.Drawing.Point(94, 19);
             this.text_address.MaxLength = 2;
             this.text_address.Name = "text_address";
             this.text_address.Size = new System.Drawing.Size(121, 20);
@@ -1700,7 +2219,18 @@
             "COM6",
             "COM7",
             "COM8",
-            "COM9"});
+            "COM9",
+            "COM10",
+            "COM11",
+            "COM12",
+            "COM13",
+            "COM14",
+            "COM15",
+            "COM16",
+            "COM17",
+            "COM18",
+            "COM19",
+            "COM20"});
             this.ComboBox_COM.Location = new System.Drawing.Point(96, 16);
             this.ComboBox_COM.Name = "ComboBox_COM";
             this.ComboBox_COM.Size = new System.Drawing.Size(121, 21);
@@ -1728,13 +2258,14 @@
             // rb_rs232
             // 
             this.rb_rs232.AutoSize = true;
-            this.rb_rs232.Location = new System.Drawing.Point(33, 20);
+            this.rb_rs232.Checked = true;
+            this.rb_rs232.Location = new System.Drawing.Point(30, 20);
             this.rb_rs232.Name = "rb_rs232";
             this.rb_rs232.Size = new System.Drawing.Size(58, 17);
             this.rb_rs232.TabIndex = 0;
+            this.rb_rs232.TabStop = true;
             this.rb_rs232.Text = "RS232";
             this.rb_rs232.UseVisualStyleBackColor = true;
-            this.rb_rs232.CheckedChanged += new System.EventHandler(this.rb_rs232_CheckedChanged);
             // 
             // tabPage15
             // 
@@ -2488,396 +3019,6 @@
             this.btSetRfPower.UseVisualStyleBackColor = true;
             this.btSetRfPower.Click += new System.EventHandler(this.btSetRfPower_Click);
             // 
-            // tabtest_SQL
-            // 
-            this.tabtest_SQL.Location = new System.Drawing.Point(4, 27);
-            this.tabtest_SQL.Name = "tabtest_SQL";
-            this.tabtest_SQL.Size = new System.Drawing.Size(1136, 584);
-            this.tabtest_SQL.TabIndex = 4;
-            this.tabtest_SQL.Text = "TEST_SQL";
-            this.tabtest_SQL.UseVisualStyleBackColor = true;
-            this.tabtest_SQL.Click += new System.EventHandler(this.tabtest_SQL_Click);
-            // 
-            // Main_Page2
-            // 
-            this.Main_Page2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Main_Page2.Controls.Add(this.tabControl2);
-            this.Main_Page2.Location = new System.Drawing.Point(4, 27);
-            this.Main_Page2.Name = "Main_Page2";
-            this.Main_Page2.Padding = new System.Windows.Forms.Padding(3);
-            this.Main_Page2.Size = new System.Drawing.Size(1147, 621);
-            this.Main_Page2.TabIndex = 1;
-            this.Main_Page2.Text = "EPCC1-G2";
-            this.Main_Page2.UseVisualStyleBackColor = true;
-            // 
-            // tabControl2
-            // 
-            this.tabControl2.Controls.Add(this.tabPage_answer);
-            this.tabControl2.ItemSize = new System.Drawing.Size(120, 23);
-            this.tabControl2.Location = new System.Drawing.Point(-1, 6);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1131, 612);
-            this.tabControl2.TabIndex = 0;
-            // 
-            // tabPage_answer
-            // 
-            this.tabPage_answer.Controls.Add(this.chk_phase);
-            this.tabPage_answer.Location = new System.Drawing.Point(4, 27);
-            this.tabPage_answer.Name = "tabPage_answer";
-            this.tabPage_answer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_answer.Size = new System.Drawing.Size(1123, 581);
-            this.tabPage_answer.TabIndex = 0;
-            this.tabPage_answer.Text = "Answer Mode";
-            this.tabPage_answer.UseVisualStyleBackColor = true;
-            // 
-            // chk_phase
-            // 
-            this.chk_phase.Controls.Add(this.group_ant1);
-            this.chk_phase.Controls.Add(this.lxLedControl6);
-            this.chk_phase.Controls.Add(this.label119);
-            this.chk_phase.Controls.Add(this.lxLedControl5);
-            this.chk_phase.Controls.Add(this.label9);
-            this.chk_phase.Controls.Add(this.lxLedControl4);
-            this.chk_phase.Controls.Add(this.label8);
-            this.chk_phase.Controls.Add(this.lxLedControl3);
-            this.chk_phase.Controls.Add(this.label7);
-            this.chk_phase.Controls.Add(this.lxLedControl2);
-            this.chk_phase.Controls.Add(this.label6);
-            this.chk_phase.Controls.Add(this.lxLedControl1);
-            this.chk_phase.Controls.Add(this.label5);
-            this.chk_phase.Controls.Add(this.groupBox5);
-            this.chk_phase.Controls.Add(this.groupBox2);
-            this.chk_phase.Enabled = false;
-            this.chk_phase.Location = new System.Drawing.Point(2, 2);
-            this.chk_phase.Name = "chk_phase";
-            this.chk_phase.Size = new System.Drawing.Size(1121, 574);
-            this.chk_phase.TabIndex = 0;
-            // 
-            // group_ant1
-            // 
-            this.group_ant1.Controls.Add(this.check_ant4);
-            this.group_ant1.Controls.Add(this.check_ant3);
-            this.group_ant1.Controls.Add(this.check_ant2);
-            this.group_ant1.Controls.Add(this.check_ant1);
-            this.group_ant1.Location = new System.Drawing.Point(8, 84);
-            this.group_ant1.Name = "group_ant1";
-            this.group_ant1.Size = new System.Drawing.Size(89, 478);
-            this.group_ant1.TabIndex = 44;
-            this.group_ant1.TabStop = false;
-            this.group_ant1.Text = "Antenna";
-            // 
-            // check_ant4
-            // 
-            this.check_ant4.AutoSize = true;
-            this.check_ant4.Checked = true;
-            this.check_ant4.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.check_ant4.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.check_ant4.Location = new System.Drawing.Point(16, 88);
-            this.check_ant4.Name = "check_ant4";
-            this.check_ant4.Size = new System.Drawing.Size(54, 17);
-            this.check_ant4.TabIndex = 37;
-            this.check_ant4.Text = "ANT4";
-            this.check_ant4.UseVisualStyleBackColor = true;
-            // 
-            // check_ant3
-            // 
-            this.check_ant3.AutoSize = true;
-            this.check_ant3.Checked = true;
-            this.check_ant3.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.check_ant3.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.check_ant3.Location = new System.Drawing.Point(16, 66);
-            this.check_ant3.Name = "check_ant3";
-            this.check_ant3.Size = new System.Drawing.Size(54, 17);
-            this.check_ant3.TabIndex = 36;
-            this.check_ant3.Text = "ANT3";
-            this.check_ant3.UseVisualStyleBackColor = true;
-            // 
-            // check_ant2
-            // 
-            this.check_ant2.AutoSize = true;
-            this.check_ant2.Checked = true;
-            this.check_ant2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.check_ant2.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.check_ant2.Location = new System.Drawing.Point(16, 42);
-            this.check_ant2.Name = "check_ant2";
-            this.check_ant2.Size = new System.Drawing.Size(54, 17);
-            this.check_ant2.TabIndex = 35;
-            this.check_ant2.Text = "ANT2";
-            this.check_ant2.UseVisualStyleBackColor = true;
-            // 
-            // check_ant1
-            // 
-            this.check_ant1.AutoSize = true;
-            this.check_ant1.Checked = true;
-            this.check_ant1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.check_ant1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.check_ant1.Location = new System.Drawing.Point(16, 20);
-            this.check_ant1.Name = "check_ant1";
-            this.check_ant1.Size = new System.Drawing.Size(54, 17);
-            this.check_ant1.TabIndex = 34;
-            this.check_ant1.Text = "ANT1";
-            this.check_ant1.UseVisualStyleBackColor = true;
-            // 
-            // lxLedControl6
-            // 
-            this.lxLedControl6.BackColor = System.Drawing.Color.Transparent;
-            this.lxLedControl6.BackColor_1 = System.Drawing.Color.Transparent;
-            this.lxLedControl6.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.lxLedControl6.BevelRate = 0.5F;
-            this.lxLedControl6.BorderColor = System.Drawing.Color.Lavender;
-            this.lxLedControl6.BorderWidth = 3;
-            this.lxLedControl6.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.lxLedControl6.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.lxLedControl6.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lxLedControl6.HighlightOpaque = ((byte)(50));
-            this.lxLedControl6.Location = new System.Drawing.Point(805, 241);
-            this.lxLedControl6.Name = "lxLedControl6";
-            this.lxLedControl6.RoundCorner = true;
-            this.lxLedControl6.ShowHighlight = true;
-            this.lxLedControl6.Size = new System.Drawing.Size(277, 88);
-            this.lxLedControl6.TabIndex = 43;
-            this.lxLedControl6.Text = "0";
-            this.lxLedControl6.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            this.lxLedControl6.TotalCharCount = 6;
-            // 
-            // label119
-            // 
-            this.label119.AutoSize = true;
-            this.label119.Location = new System.Drawing.Point(807, 221);
-            this.label119.Name = "label119";
-            this.label119.Size = new System.Drawing.Size(68, 13);
-            this.label119.TabIndex = 42;
-            this.label119.Text = "TID Number:";
-            // 
-            // lxLedControl5
-            // 
-            this.lxLedControl5.BackColor = System.Drawing.Color.Transparent;
-            this.lxLedControl5.BackColor_1 = System.Drawing.Color.Transparent;
-            this.lxLedControl5.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.lxLedControl5.BevelRate = 0.5F;
-            this.lxLedControl5.BorderColor = System.Drawing.Color.Lavender;
-            this.lxLedControl5.BorderWidth = 3;
-            this.lxLedControl5.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.lxLedControl5.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.lxLedControl5.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lxLedControl5.HighlightOpaque = ((byte)(50));
-            this.lxLedControl5.Location = new System.Drawing.Point(944, 481);
-            this.lxLedControl5.Name = "lxLedControl5";
-            this.lxLedControl5.RoundCorner = true;
-            this.lxLedControl5.ShowHighlight = true;
-            this.lxLedControl5.Size = new System.Drawing.Size(126, 30);
-            this.lxLedControl5.TabIndex = 41;
-            this.lxLedControl5.Text = "0";
-            this.lxLedControl5.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            this.lxLedControl5.TotalCharCount = 7;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label9.Location = new System.Drawing.Point(942, 459);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(98, 13);
-            this.label9.TabIndex = 40;
-            this.label9.Text = "Total-cmd-time(ms):";
-            // 
-            // lxLedControl4
-            // 
-            this.lxLedControl4.BackColor = System.Drawing.Color.Transparent;
-            this.lxLedControl4.BackColor_1 = System.Drawing.Color.Transparent;
-            this.lxLedControl4.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.lxLedControl4.BevelRate = 0.5F;
-            this.lxLedControl4.BorderColor = System.Drawing.Color.Lavender;
-            this.lxLedControl4.BorderWidth = 3;
-            this.lxLedControl4.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.lxLedControl4.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.lxLedControl4.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lxLedControl4.HighlightOpaque = ((byte)(50));
-            this.lxLedControl4.Location = new System.Drawing.Point(800, 480);
-            this.lxLedControl4.Name = "lxLedControl4";
-            this.lxLedControl4.RoundCorner = true;
-            this.lxLedControl4.ShowHighlight = true;
-            this.lxLedControl4.Size = new System.Drawing.Size(126, 32);
-            this.lxLedControl4.TabIndex = 39;
-            this.lxLedControl4.Text = "0";
-            this.lxLedControl4.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            this.lxLedControl4.TotalCharCount = 7;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label8.Location = new System.Drawing.Point(798, 459);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(90, 13);
-            this.label8.TabIndex = 38;
-            this.label8.Text = "Total tag number:";
-            // 
-            // lxLedControl3
-            // 
-            this.lxLedControl3.BackColor = System.Drawing.Color.Transparent;
-            this.lxLedControl3.BackColor_1 = System.Drawing.Color.Transparent;
-            this.lxLedControl3.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.lxLedControl3.BevelRate = 0.5F;
-            this.lxLedControl3.BorderColor = System.Drawing.Color.Lavender;
-            this.lxLedControl3.BorderWidth = 3;
-            this.lxLedControl3.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.lxLedControl3.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.lxLedControl3.ForeColor = System.Drawing.Color.Purple;
-            this.lxLedControl3.HighlightOpaque = ((byte)(50));
-            this.lxLedControl3.Location = new System.Drawing.Point(944, 392);
-            this.lxLedControl3.Name = "lxLedControl3";
-            this.lxLedControl3.RoundCorner = true;
-            this.lxLedControl3.ShowHighlight = true;
-            this.lxLedControl3.Size = new System.Drawing.Size(126, 32);
-            this.lxLedControl3.TabIndex = 37;
-            this.lxLedControl3.Text = "0";
-            this.lxLedControl3.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            this.lxLedControl3.TotalCharCount = 7;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label7.Location = new System.Drawing.Point(942, 366);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 13);
-            this.label7.TabIndex = 36;
-            this.label7.Text = "cmd time(ms):";
-            // 
-            // lxLedControl2
-            // 
-            this.lxLedControl2.BackColor = System.Drawing.Color.Transparent;
-            this.lxLedControl2.BackColor_1 = System.Drawing.Color.Transparent;
-            this.lxLedControl2.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.lxLedControl2.BevelRate = 0.5F;
-            this.lxLedControl2.BorderColor = System.Drawing.Color.Lavender;
-            this.lxLedControl2.BorderWidth = 3;
-            this.lxLedControl2.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.lxLedControl2.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.lxLedControl2.ForeColor = System.Drawing.Color.Purple;
-            this.lxLedControl2.HighlightOpaque = ((byte)(50));
-            this.lxLedControl2.Location = new System.Drawing.Point(800, 392);
-            this.lxLedControl2.Name = "lxLedControl2";
-            this.lxLedControl2.RoundCorner = true;
-            this.lxLedControl2.ShowHighlight = true;
-            this.lxLedControl2.Size = new System.Drawing.Size(126, 32);
-            this.lxLedControl2.TabIndex = 35;
-            this.lxLedControl2.Text = "0";
-            this.lxLedControl2.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            this.lxLedControl2.TotalCharCount = 7;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label6.Location = new System.Drawing.Point(798, 366);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 13);
-            this.label6.TabIndex = 34;
-            this.label6.Text = "Speed:";
-            // 
-            // lxLedControl1
-            // 
-            this.lxLedControl1.BackColor = System.Drawing.Color.Transparent;
-            this.lxLedControl1.BackColor_1 = System.Drawing.Color.Transparent;
-            this.lxLedControl1.BackColor_2 = System.Drawing.Color.DarkRed;
-            this.lxLedControl1.BevelRate = 0.5F;
-            this.lxLedControl1.BorderColor = System.Drawing.Color.Lavender;
-            this.lxLedControl1.BorderWidth = 3;
-            this.lxLedControl1.FadedColor = System.Drawing.SystemColors.ControlLight;
-            this.lxLedControl1.FocusedBorderColor = System.Drawing.Color.LightCoral;
-            this.lxLedControl1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lxLedControl1.HighlightOpaque = ((byte)(50));
-            this.lxLedControl1.Location = new System.Drawing.Point(805, 114);
-            this.lxLedControl1.Name = "lxLedControl1";
-            this.lxLedControl1.RoundCorner = true;
-            this.lxLedControl1.ShowHighlight = true;
-            this.lxLedControl1.Size = new System.Drawing.Size(277, 88);
-            this.lxLedControl1.TabIndex = 33;
-            this.lxLedControl1.Text = "0";
-            this.lxLedControl1.TextAlignment = LxControl.LxLedControl.Alignment.Right;
-            this.lxLedControl1.TotalCharCount = 6;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(807, 93);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 13);
-            this.label5.TabIndex = 32;
-            this.label5.Text = "EPC Number:";
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.dataGridView1);
-            this.groupBox5.Location = new System.Drawing.Point(100, 85);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(704, 482);
-            this.groupBox5.TabIndex = 18;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Tag list(No Repeat)";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(5, 22);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(691, 456);
-            this.dataGridView1.TabIndex = 1;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.rb_epc);
-            this.groupBox2.Controls.Add(this.btIventoryG2);
-            this.groupBox2.Location = new System.Drawing.Point(5, 1);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(422, 77);
-            this.groupBox2.TabIndex = 15;
-            this.groupBox2.TabStop = false;
-            // 
-            // rb_epc
-            // 
-            this.rb_epc.AutoSize = true;
-            this.rb_epc.Checked = true;
-            this.rb_epc.Location = new System.Drawing.Point(120, 37);
-            this.rb_epc.Name = "rb_epc";
-            this.rb_epc.Size = new System.Drawing.Size(46, 17);
-            this.rb_epc.TabIndex = 1;
-            this.rb_epc.TabStop = true;
-            this.rb_epc.Text = "EPC";
-            this.rb_epc.UseVisualStyleBackColor = true;
-            this.rb_epc.CheckedChanged += new System.EventHandler(this.rb_epc_CheckedChanged);
-            // 
-            // btIventoryG2
-            // 
-            this.btIventoryG2.BackColor = System.Drawing.Color.Transparent;
-            this.btIventoryG2.Font = new System.Drawing.Font("SimSun", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btIventoryG2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.btIventoryG2.Location = new System.Drawing.Point(6, 22);
-            this.btIventoryG2.Name = "btIventoryG2";
-            this.btIventoryG2.Size = new System.Drawing.Size(109, 43);
-            this.btIventoryG2.TabIndex = 0;
-            this.btIventoryG2.Text = "Start";
-            this.btIventoryG2.UseVisualStyleBackColor = false;
-            this.btIventoryG2.Click += new System.EventHandler(this.btIventoryG2_Click);
-            // 
             // btFlashCl
             // 
             this.btFlashCl.Location = new System.Drawing.Point(939, 656);
@@ -2928,27 +3069,20 @@
             this.ckClearOperationRec.Text = "Auto-Clear";
             this.ckClearOperationRec.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // serialPort2
             // 
-            this.button3.Location = new System.Drawing.Point(841, 657);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(77, 25);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "run";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            this.serialPort2.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.serialPort2_DataReceived);
             // 
-            // timer1
+            // timer2
             // 
-            this.timer1.Interval = 500;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            this.timer2.Interval = 5000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1155, 813);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.ckClearOperationRec);
             this.Controls.Add(this.btFlashCl);
             this.Controls.Add(this.Maintab);
@@ -2959,12 +3093,33 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UHFReader288 Demo V6.1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Maintab.ResumeLayout(false);
+            this.Main_Page2.ResumeLayout(false);
+            this.tabControl2.ResumeLayout(false);
+            this.tabPage_answer.ResumeLayout(false);
+            this.chk_phase.ResumeLayout(false);
+            this.chk_phase.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.group_ant1.ResumeLayout(false);
+            this.group_ant1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl1)).EndInit();
+            this.groupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.Main_Page1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage_Basic.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.gbReturnLoss.ResumeLayout(false);
             this.gbReturnLoss.PerformLayout();
             this.gbCmdTemperature.ResumeLayout(false);
@@ -2994,8 +3149,6 @@
             this.gpb_Freq.PerformLayout();
             this.gpb_beep.ResumeLayout(false);
             this.gpb_beep.PerformLayout();
-            this.gpb_RDVersion.ResumeLayout(false);
-            this.gpb_RDVersion.PerformLayout();
             this.gpb_MDVersion.ResumeLayout(false);
             this.gpb_MDVersion.PerformLayout();
             this.gpb_Serial.ResumeLayout(false);
@@ -3021,23 +3174,6 @@
             this.gbp_MixRead.PerformLayout();
             this.gbp_PowerAnt.ResumeLayout(false);
             this.gbp_PowerAnt.PerformLayout();
-            this.Main_Page2.ResumeLayout(false);
-            this.tabControl2.ResumeLayout(false);
-            this.tabPage_answer.ResumeLayout(false);
-            this.chk_phase.ResumeLayout(false);
-            this.chk_phase.PerformLayout();
-            this.group_ant1.ResumeLayout(false);
-            this.group_ant1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lxLedControl1)).EndInit();
-            this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3054,7 +3190,6 @@
         private System.Windows.Forms.TabPage tabPage_Basic;
         private System.Windows.Forms.GroupBox gpb_rs232;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton rb_rs232;
         private System.Windows.Forms.Button btDisConnect232;
         private System.Windows.Forms.Button btConnect232;
         private System.Windows.Forms.ComboBox ComboBox_baud2;
@@ -3088,8 +3223,6 @@
         private System.Windows.Forms.TextBox text_Serial;
         private System.Windows.Forms.Button btSerial;
         private System.Windows.Forms.GroupBox gpb_beep;
-        private System.Windows.Forms.GroupBox gpb_RDVersion;
-        private System.Windows.Forms.TextBox text_RDVersion;
         private System.Windows.Forms.RadioButton Radio_beepDis;
         private System.Windows.Forms.RadioButton Radio_beepEn;
         private System.Windows.Forms.Button Button_Beep;
@@ -3260,7 +3393,6 @@
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TabPage tabtest_SQL;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridView dataGridView4;
         private System.Windows.Forms.GroupBox gpb_antconfig;
@@ -3270,8 +3402,21 @@
         private System.Windows.Forms.CheckBox checkant3;
         private System.Windows.Forms.CheckBox checkant2;
         private System.Windows.Forms.CheckBox checkant1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btDisConnectMCU;
+        private System.Windows.Forms.Button btConnectMCU;
+        private System.Windows.Forms.ComboBox comboBoxBaud;
+        private System.Windows.Forms.Label label26;
+        internal System.Windows.Forms.ComboBox comboBoxPort;
+        internal System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.RadioButton rb_rs232;
+        private System.IO.Ports.SerialPort serialPort2;
+        private System.Windows.Forms.Button StartPowerAuto;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Button StopPowerAuto;
+        private System.Windows.Forms.GroupBox groupBox6;
     }
 }
 
